@@ -1,7 +1,14 @@
 module.exports = {
   siteMetadata: {
       title: ``,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
+    titleTemplate: "%s · The Real Hero",
+    description:"coucou",
+    url:"",
+    image:"",
+    twitterUsername:"",
+
+
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
@@ -17,3 +24,4 @@ module.exports = {
     __key: "images"
   }]
 };
+

@@ -22,7 +22,9 @@ export default function NavBarLink() {
               </svg>
             </button>
             <ul className="dropdown-menu absolute bg-white p-5 hidden space-y-4  text-gray-700 pt-">
+              <Link to="/projets/ferrieres">
               <li>Projet de Ferrières</li>
+              </Link>
               <li> Vents d’Autelbas</li>
               <li> Projets Sofico</li>
               <li> Photovoltaïque Ernonheid</li>
@@ -32,7 +34,9 @@ export default function NavBarLink() {
         {/* fin menu déroulant */}
 
         <li>Cociter</li>
+        <Link to="/devenir-cooperateur">
         <li>Devenir Coopérateur</li>
+        </Link>
         <li>FAQ</li>
         {/* début menu déroulant */}
         <li>
@@ -57,7 +61,9 @@ export default function NavBarLink() {
         </li>
         {/* fin menu déroulant */}
         <li>Agenda</li>
+        <Link to="/contact">
         <li>Contact</li>
+        </Link>
       </ul>
     </header>
   );

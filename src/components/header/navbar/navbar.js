@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import NavBarLink from "./navbarlink/navbarlink";
+import { Link } from "gatsby";
 
 const Navbar = () => {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -9,6 +10,7 @@ const Navbar = () => {
     <>
     <nav className=" w-10/12 m-auto flex justify-between items-center">
       <article className="flex gap-x-10 items-center">
+        <Link to="/">
         <figure>
           <StaticImage
             src="https://fakeimg.pl/250x100/"
@@ -18,6 +20,7 @@ const Navbar = () => {
             alt="A Gatsby astronaut"
           />
         </figure>
+        </Link>
       </article>
       <article className="hidden md:block">
        <NavBarLink />
