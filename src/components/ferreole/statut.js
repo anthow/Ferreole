@@ -1,0 +1,53 @@
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
+
+const Statut = () => {
+  const data = useStaticQuery(graphql`
+      {
+    datoCmsPageFerreole {
+      texteStatut
+      introductionStatut
+      titreStatuts
+      imageStatut {
+        alt
+        gatsbyImageData
+      }
+    }
+  }
+  `)
+  return    <>  <article className="py-20 text-white bg-primary-color">
+  <section className="w-10/12 mb-20 m-auto flex flex-col md:grid gap-20 grid-cols-2">
+  
+    <GatsbyImage image={data.datoCmsPageFerreole.imageStatut.gatsbyImageData} />
+    <div className="flex flex-col gap-y-10">
+      <h2 className="text-2xl  text-white ">{data.datoCmsPageFerreole.titreStatuts} </h2>
+      
+      <div className="text-lg"
+          dangerouslySetInnerHTML={{
+            __html: data.datoCmsPageFerreole.introductionStatut
+          }}
+        />
+    </div>
+  </section>
+  <section className="flex flex-col gap-y-10 w-10/12 m-auto ">
+  <div className=""
+          dangerouslySetInnerHTML={{
+            __html: data.datoCmsPageFerreole.texteStatut
+          }}
+        />    <Link to="/statuts">
+    <button className=" text-gray-600 bg-white p-2 w-max">
+      Voir les statuts complets
+    </button>
+    </Link>
+  </section>
+</article>
+</>
+}
+
+export default Statut
+
+
+

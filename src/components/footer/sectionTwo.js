@@ -17,14 +17,14 @@ const SectionTwo = () => {
           <li>
             {" "}
             <FontAwesomeIcon
-              className="hover:text-red-600 text-lg"
+              className="hover:text-secondary-color text-lg"
               icon={faEnvelope}
               size="1x"
             />
           </li>
           <li>
             <FontAwesomeIcon
-              className="hover:text-red-600 text-lg"
+              className="hover:text-secondary-color text-lg"
               icon={faFacebook}
               size="1x"
             />

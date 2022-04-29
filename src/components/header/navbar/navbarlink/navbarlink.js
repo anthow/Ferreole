@@ -4,15 +4,15 @@ import React from "react";
 export default function NavBarLink() {
   return (
     <header className=" p-10 flex flex-col md:flex-row justify-between">
-      <ul className="flex flex-col gap-x-4 m-auto md:flex-row">
+      <ul className="flex flex-col items-center text-primary-color  gap-x-4 m-auto md:flex-row">
         <Link to="/ferreole">
-        <li>Ferréole</li>
+        <li className="hover:opacity-70">Ferréole</li>
         </Link>
         {/* début menu déroulant */}
         <li>
           <div className="dropdown inline-block relative">
             <button className=" f rounded flex md:inline-flex items-center">
-              <p>Les projets</p>
+              <p className="hover:opacity-70">Les projets</p>
               <svg
                 className="ml-2 fill-current h-4 "
                 xmlns="http://www.w3.org/2000/svg"
@@ -21,28 +21,27 @@ export default function NavBarLink() {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />{" "}
               </svg>
             </button>
-            <ul className="dropdown-menu absolute bg-white p-5 hidden space-y-4  text-gray-700 pt-">
+            <ul className="dropdown-menu text-primary-color absolute bg-white p-5 hidden space-y-4  text-gray-700 pt-">
               <Link to="/projets/ferrieres">
-              <li>Projet de Ferrières</li>
+              <li className=" text-primary-color hover:opacity-70"> Projet de Ferrières</li>
               </Link>
-              <li> Vents d’Autelbas</li>
-              <li> Projets Sofico</li>
-              <li> Photovoltaïque Ernonheid</li>
+              <li className="text-primary-color hover:opacity-70"> Vents d’Autelbas</li>
+              <li className="text-primary-color hover:opacity-70"> Projets Sofico</li>
+              <li className=" text-primary-color hover:opacity-70"> Photovoltaïque Ernonheid</li>
             </ul>
           </div>
         </li>
         {/* fin menu déroulant */}
 
-        <li>Cociter</li>
+        <li className="hover:opacity-70">Cociter</li>
         <Link to="/devenir-cooperateur">
-        <li>Devenir Coopérateur</li>
         </Link>
-        <li>FAQ</li>
+        <li className="hover:opacity-70">FAQ</li>
         {/* début menu déroulant */}
         <li>
           <div className="dropdown inline-block relative">
             <button className=" f rounded flex md:inline-flex items-center">
-              <p>Infos</p>
+              <p className="hover:opacity-70">Infos</p>
               <svg
                 className="ml-2 fill-current h-4 "
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,18 +50,22 @@ export default function NavBarLink() {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />{" "}
               </svg>
             </button>
-            <ul className="dropdown-menu absolute bg-white p-5 hidden space-y-4  text-gray-700 pt-">
-              <li>Actualités</li>
-              <li> Documents</li>
-              <li> Brochure « Rumeurs et Réalités sur l’éolien »</li>
-              <li> Newsletter</li>
+            <ul className="dropdown-menu absolute bg-white p-5 hidden space-y-4 w-max  text-gray-700 pt-">
+              <li className="text-primary-color hover:opacity-70">Actualités</li>
+              <li className="text-primary-color hover:opacity-70"> Documents</li>
+              <li className="text-primary-color hover:opacity-70"> Brochure « Rumeurs et Réalités sur l’éolien »</li>
+              <li className="text-primary-color hover:opacity-70"> Newsletter</li>
+
             </ul>
           </div>
         </li>
         {/* fin menu déroulant */}
-        <li>Agenda</li>
+        <li className="hover:opacity-70">Agenda</li>
         <Link to="/contact">
-        <li>Contact</li>
+        <li className="hover:opacity-70">Contact</li>
+        </Link>
+        <Link to="/devenir-cooperateur">
+        <li className=" hover:opacity-70 bg-secondary-color p-2 rounded font-black text-white md: ml-10">Devenir Coopérateur</li>
         </Link>
       </ul>
     </header>

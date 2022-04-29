@@ -2,23 +2,30 @@ import React, { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import NavBarLink from "./navbarlink/navbarlink";
 import { Link } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Navbar = () => {
   const [isExpanded, toggleExpansion] = useState(false);
+      const data = useStaticQuery(graphql`
+      {
+        datoCmsGeneral {
+          logo {
+            alt
+            gatsbyImageData(height: 74)
 
+          }
+        }
+      }
+    `)
   return (
     <>
-    <nav className=" w-10/12 m-auto flex justify-between items-center">
+    <nav className=" w-10/12 m-auto  flex justify-between items-center">
       <article className="flex gap-x-10 items-center">
         <Link to="/">
         <figure>
-          <StaticImage
-            src="https://fakeimg.pl/250x100/"
-            width={100}
-            quality={95}
-            formats={["auto", "webp", "avif"]}
-            alt="A Gatsby astronaut"
-          />
+        <GatsbyImage image={data.datoCmsGeneral.logo.gatsbyImageData} alt={data.datoCmsGeneral.logo.alt} />
+
         </figure>
         </Link>
       </article>

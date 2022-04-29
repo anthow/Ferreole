@@ -8,3 +8,20 @@
 .timeline{
     left: 50% !important;
 }
+
+.paragraphe p {
+    margin-bottom: 20px;
+}
+
+article.ferriere{
+background-image: url(https://res.cloudinary.com/liono/image/upload/v1647268427/pexels-pixabay-414837_qthgdi.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+article.cooperateur{
+    background-image: url(
+        https://res.cloudinary.com/liono/image/upload/v1647268513/c83b1dcc-eb63-11e9-8783-0177171552f0_original_kxvfhq.jpg        );
+        background-repeat: no-repeat;
+        background-size: cover;
+    }

@@ -1,32 +1,48 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image";
 
-export default function DevenirCooperateur() {
-  return (
-    <article className="  py-20 md:py-0 md:min-h-9/10 flex flex-col m-auto bg-white ">
-      <section className="w-10/12 m-auto items-center flex flex-col gap-x-4 md:grid grid-cols-2">
-        <figure className="m-auto order-2 md:order-2">
-          <StaticImage
-            src="https://res.cloudinary.com/liono/image/upload/v1638519084/pexels-johannes-plenio-1125776_azbvag.jpg"
-            quality={95}
-            formats={["auto", "webp", "avif"]}
-            alt="A Gatsby astronaut"
-            className="mb-5"
-          />
-        </figure>
-        <div className="order-2 md:order-1">
-          <h2 className="text-3xl text-secondary-color  font-black mb-2 md:mb-5">
-            Devenir Cooopérateur
-          </h2>
-          <p className="">
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </section>
-    </article>
-  );
+const DevenirCooperateur = () => {
+  const data = useStaticQuery(graphql`
+    {
+      datoCmsPageDAccueil {
+        titreDevenezCooperateur
+        texteDevenezCooperateur
+        imageDevenezCooperateur {
+          gatsbyImageData
+          alt
+        }
+      }
+    }
+  `)
+  return <article className="  py-20 md:py-0 md:min-h-9/10 flex flex-col m-auto bg-white ">
+  <section className="w-10/12 gap-y-10 m-auto items-center flex flex-col gap-x-20 md:grid grid-cols-2">
+    <figure className="m-auto order-2 md:order-2">
+     
+      <GatsbyImage image={data.datoCmsPageDAccueil.imageDevenezCooperateur.gatsbyImageData} />
+    </figure>
+    <div className=" flex flex-col gap-y-10 order-2 md:order-1">
+      <h2 className="text-2xl md:text-3xl text-secondary-color  font-black ">
+{data.datoCmsPageDAccueil.titreDevenezCooperateur}      </h2>
+<div className="text-lg"
+          dangerouslySetInnerHTML={{
+            __html: data.datoCmsPageDAccueil.texteDevenezCooperateur
+          }}
+        />
+      <button className="bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
+      Devenir Coopérateur</button>
+    </div>
+
+
+  </section>
+</article>
 }
+
+export default DevenirCooperateur
+
+
+
+
+
+
