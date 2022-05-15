@@ -1,6 +1,4 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-
 import { GatsbyImage } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -33,8 +31,9 @@ const Brochure = () => {
             __html: data.datoCmsPageDAccueil.texteBrochure
           }}
         />
+        <a href="https://www.rescoop-wallonie.be/wp-content/uploads/2020/07/eolien-rumeurs-et-realites.pdf"  rel="noreferrer" target="_blank" >
       <button className="bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
-      Découvrir la brochure</button>
+      Découvrir la brochure</button></a>
     </div>
   </section>
 </article>
