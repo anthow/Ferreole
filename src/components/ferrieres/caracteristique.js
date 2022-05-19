@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-const Caracteristique = () => {
+const Caracteristique = () => {                                                     
   const data = useStaticQuery(graphql`
  {
     datoCmsProjetDeFerriere {
@@ -25,30 +25,26 @@ const Caracteristique = () => {
   }
   `)
   return   <>      <article className="flex flex-col space-y-20">
-  <h2 className="text-center text-4xl">
+  <h2 className="text-center text-secondary-color text-4xl">
 {data.datoCmsProjetDeFerriere.titreCaracteristique}  </h2>
-  <section className="w-10/12 m-auto flex flex-col md:grid grid-cols-2 gap-x-20 gap-y-10">
+  <section className="w-10/12 m-auto items-center flex flex-col md:grid grid-cols-2 gap-x-20 gap-y-10">
     <figure className="">
   
       <GatsbyImage image={data.datoCmsProjetDeFerriere.imageSectionUnCaracteristique.gatsbyImageData}
       alt={data.datoCmsProjetDeFerriere.imageSectionUnCaracteristique.alt}
       className="h-full"/>
     </figure>
-    <div className=" flex flex-col space-y-10">
-      <h3 className="text-3xl">{data.datoCmsProjetDeFerriere.titreSectionUnCaracteristique}</h3>
+    <div className=" ">
       <div className=""
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.paragrapheUnSectionUnCaracteristique
           }}
         /> 
     </div>
-    <div className=" col-span-2 flex flex-col space-y-5">
-    <div className=""
-          dangerouslySetInnerHTML={{
+    <div className="flex flex-col space-y-5 col-span-2"          dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.paragrapheUnSectionDeuxCaracteristiqueCopy1
           }}
         /> 
-    </div>
   </section>
 </article>
 
@@ -63,14 +59,14 @@ const Caracteristique = () => {
         
     </figure>
     <div className=" flex flex-col md:order-1 space-y-10">
-      <h3 className="text-3xl">{data.datoCmsProjetDeFerriere.titreSectionDeuxCaracteristique}</h3>
-      <div className=""
+      <h3 className="text-3xl font-bold text-secondary-color">{data.datoCmsProjetDeFerriere.titreSectionDeuxCaracteristique}</h3>
+      <div className="flex flex-col paragraphef space-y-5"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.paragrapheDeuxSectionUnCaracteristique
           }}
         /> 
     </div>
-    <div className=" col-span-2 md:order-3 flex flex-col space-y-5">
+    <div className=" col-span-2 md:order-3 paragraphef flex flex-col space-y-5">
     <div className=""
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.paragrapheDeuxSectionDeuxCaracteristique

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body{font-family: "roboto";}
+h1,h2,h3,h4,h5,h6{font-family: "lora";}
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -19,9 +22,15 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
+
+
 article.cooperateur{
     background-image: url(
         https://res.cloudinary.com/liono/image/upload/v1647268513/c83b1dcc-eb63-11e9-8783-0177171552f0_original_kxvfhq.jpg        );
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+
+    .paragraphef h3,b{color: #66A3D9;
+    font-size: 1.5rem;}

@@ -23,7 +23,7 @@ const Savoir = () => {
     }
   `)
   return     <>   <article className="flex flex-col space-y-20">
-  <h2 className="text-center text-4xl">
+  <h2 className="text-center text-secondary-color text-4xl">
     Vous souhaitez en savoir plus ?
   </h2>
   <section className="flex w-10/12 m-auto flex-col md:grid grid-cols-2 gap-x-20 gap-y-10">
@@ -34,13 +34,13 @@ const Savoir = () => {
  image={data.datoCmsProjetDeFerriere.imageEtudeDIncidence.gatsbyImageData}
         alt={data.datoCmsProjetDeFerriere.imageEtudeDIncidence.data} />
       </figure>
-      <h3 className="text-3xl">{data.datoCmsProjetDeFerriere.titreEtudeDIncidence}</h3>
+      <h3 className="text-3xl text-primary-color">{data.datoCmsProjetDeFerriere.titreEtudeDIncidence}</h3>
      <div className=""
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.texteImageDIncidence
           }}
         /> 
-      <button className=" bg-gray-600 text-white p-2 w-max">
+      <button className=" hover:opacity-70 bg-secondary-color w-max p-2 rounded font-black text-white">
     {" "}
     Bouton{" "}
   </button>
@@ -51,13 +51,13 @@ const Savoir = () => {
  image={data.datoCmsProjetDeFerriere.imageSectionDeux.gatsbyImageData}
         alt={data.datoCmsProjetDeFerriere.imageSectionDeux.data} />
       </figure>
-      <h3 className="text-3xl">{data.datoCmsProjetDeFerriere.titreSectionDeux}</h3>
+      <h3 className="text-3xl text-primary-color">{data.datoCmsProjetDeFerriere.titreSectionDeux}</h3>
       <div className=""
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.texteSectionDeux
           }}
         /> 
-      <button className=" bg-gray-600 text-white p-2 w-max">
+      <button className=" hover:opacity-70 bg-secondary-color w-max p-2 rounded font-black text-white">
     {" "}
     Bouton{" "}
   </button>

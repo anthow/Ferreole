@@ -29,14 +29,14 @@ const Projets = () => {
     }
   `)
   return   <> 
-  <h2 className="text-2xl mb-10 pt-10 w-10/12 m-auto text-3xl text-secondary-color  font-black   ">Nos projets </h2>
+  <h2 className="text-2xl md:text-3xl font-black mb-10 pt-10 w-10/12 m-auto text-3xl text-secondary-color  font-black   ">Nos projets </h2>
   <article className="w-10/12 m-auto pb-10 flex flex-col md:grid grid-cols-2 gap-20 ">
     <section className="flex flex-col gap-y-5">
    
       <GatsbyImage image={data.datoCmsPageFerreole.imageProjetDeFerriRes.gatsbyImageData}
       alt={data.datoCmsPageFerreole.imageProjetDeFerriRes.alt}
       />
-      <h3 className="text-xl ">{data.datoCmsPageFerreole.titreProjetDeFerrieres}</h3>
+      <h3 className="text-xl font-black text-primary-color ">{data.datoCmsPageFerreole.titreProjetDeFerrieres}</h3>
    
       <div className=""
           dangerouslySetInnerHTML={{
@@ -54,7 +54,7 @@ const Projets = () => {
    <GatsbyImage image={data.datoCmsPageFerreole.imageVentsDAutelbas.gatsbyImageData}
    alt={data.datoCmsPageFerreole.imageVentsDAutelbas.alt}
    />
-   <h3 className="text-xl ">{data.datoCmsPageFerreole.titreVentsDAutelbas}</h3>
+   <h3 className="text-xl font-black text-primary-color ">{data.datoCmsPageFerreole.titreVentsDAutelbas}</h3>
 
    <div className=""
        dangerouslySetInnerHTML={{
@@ -72,7 +72,7 @@ const Projets = () => {
    <GatsbyImage image={data.datoCmsPageFerreole.imageAutresProjets.gatsbyImageData}
    alt={data.datoCmsPageFerreole.imageAutresProjets.alt}
    />
-   <h3 className="text-xl ">{data.datoCmsPageFerreole.titresAutresProjets}</h3>
+   <h3 className="text-xl font-black text-primary-color ">{data.datoCmsPageFerreole.titresAutresProjets}</h3>
 
    <div className=""
        dangerouslySetInnerHTML={{

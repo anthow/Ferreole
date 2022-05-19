@@ -27,7 +27,7 @@ const Header = () => {
       {" "}
       {data.datoCmsPageFerreole.titreHeader}
     </h1>
-    <div className="paragraphe"
+    <div className="paragraphe w-9/12 m-auto"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteHeader
           }}

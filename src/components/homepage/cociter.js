@@ -21,17 +21,17 @@ const Cociter = () => {
     <figure className="m-auto order-1 md:order-2 ">
       <GatsbyImage image={data.datoCmsPageDAccueil.imageCociter.gatsbyImageData} alt={data.datoCmsPageDAccueil.imageCociter.alt} />
     </figure>
-    <div className=" bg-white w-10/12 md:w-12/12 p-4 md:p-20 order-2 md:order-1 flex flex-col gap-y-10 items-center md:order-1">
-      <h2 className="text-3xl text-secondary-color  font-black ">
+    <div className=" bg-white w-12/12 p-4 md:p-8 order-2 md:order-1 flex flex-col gap-y-5 items-center md:order-1">
+      <h2 className=" text-xl md:text-3xl mb-5 text-secondary-color  font-black ">
         {data.datoCmsPageDAccueil.titreCociter}
       </h2>
      
-      <div className="text-lg"
+      <div className="md:text-lg"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageDAccueil.texteCociter
           }}
         />
-      <button className="bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
+      <button className="bg-secondary-color text-white py-2 px-5 w-max  text-lg md:text-xl font-black rounded">
       Découvrir Cociter</button>
     </div>
   </section>

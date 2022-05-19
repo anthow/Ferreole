@@ -25,7 +25,7 @@ const DevenirCooperateur = () => {
     <div className=" flex flex-col gap-y-10 order-2 md:order-1">
       <h2 className="text-2xl md:text-3xl text-secondary-color  font-black ">
 {data.datoCmsPageDAccueil.titreDevenezCooperateur}      </h2>
-<div className="text-lg"
+<div className="text-xl md:w-8/12"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageDAccueil.texteDevenezCooperateur
           }}

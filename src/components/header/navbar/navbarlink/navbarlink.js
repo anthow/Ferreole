@@ -32,8 +32,10 @@ export default function NavBarLink() {
           </div>
         </li>
         {/* fin menu déroulant */}
+        <Link to="/cociter">
 
         <li className="hover:opacity-70">Cociter</li>
+        </Link>
         <Link to="/devenir-cooperateur">
         </Link>
         <li className="hover:opacity-70">FAQ</li>

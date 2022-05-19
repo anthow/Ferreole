@@ -16,13 +16,13 @@ const Brochure = () => {
     }
   `)
   return     <article className="  py-20 md:py-0 md:min-h-9/10 flex flex-col m-auto bg-white ">
-  <section className="w-10/12 m-auto items-center flex flex-col gap-x-4 md:grid grid-cols-2">
-    <figure className="m-auto order-2 md:order-2">
+  <section className="w-10/12 m-auto items-center flex flex-col gap-y-5  gap-x-4 md:grid grid-cols-2">
+    <figure className="m-auto   order-1">
   
             <GatsbyImage image={data.datoCmsPageDAccueil.imageBrochure.gatsbyImageData} alt={data.datoCmsPageDAccueil.imageBrochure.alt} />
 
     </figure>
-    <div className="order-2  flex flex-col space-y-10 md:order-1">
+    <div className="order-2  flex flex-col space-y-10 ">
       <h2 className="text-3xl text-secondary-color  font-black ">
       {data.datoCmsPageDAccueil.titreBrochure}
       </h2>

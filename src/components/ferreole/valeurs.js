@@ -40,7 +40,7 @@ const Valeurs = () => {
     }
   `)
   return  <article className="py-10 text-white bg-primary-color">
-  <h2 className="text-2xl mb-10 text-white text-center">Nos valeurs </h2>
+  <h2 className=" text-2xl font-black md:text-3xl mb-10 text-white text-center">Nos valeurs </h2>
 
   <section className=" w-10/12 m-auto flex flex-col md:grid grid-cols-3 gap-20 items-center justify-center">
     <div className=" flex items-center  flex-col">
