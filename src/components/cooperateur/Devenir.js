@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const Devenir = () => {
@@ -30,10 +30,12 @@ const Devenir = () => {
             __html: data.datoCmsDevenezCooperateur.texteCommentDevenirCooperateur
           }}
         /> 
+        <Link to="../comment-devenir-cooperateur">
     <button className=" bg-gray-600 text-white p-2 w-max">
       {" "}
-      Bouton{" "}
+      voir les informations complètes{" "}
     </button>
+    </Link>
   </section>
 </article>
 }
