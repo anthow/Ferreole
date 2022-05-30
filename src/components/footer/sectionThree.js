@@ -6,16 +6,15 @@ const SectionThree = () => {
       <h4 className="text-xl text-center">Menu</h4>
       <section className="flex flex-col gap-x-10 md:grid grid-cols-2">
         <ul>
-          <li> Férréole</li>
+          <li> Ferréole</li>
           <li>Projet de Ferrières</li>
           <li>Vents d’Autelbas</li>
-          <li>Projets Sofico</li>
-          <li>Photovoltaïque Ernonheid</li>
+          <li>Autres projets</li>
           <li>Actualité</li>
           <li>Agenda</li>
         </ul>
         <ul>
-          <li>Cociter</li>
+          <li>COCITER</li>
           <li>Devenir Coopérateur</li>
           <li>Contact</li>
           <li>FAQ</li>

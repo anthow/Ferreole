@@ -27,7 +27,7 @@ const Caracteristique = () => {
   return   <>      <article className="flex flex-col space-y-20">
   <h2 className="text-center text-secondary-color text-4xl">
 {data.datoCmsProjetDeFerriere.titreCaracteristique}  </h2>
-  <section className="w-10/12 m-auto items-center flex flex-col md:grid grid-cols-2 gap-x-20 gap-y-10">
+  <section className="w-10/12 m-auto  flex flex-col md:grid grid-cols-2 gap-x-20 gap-y-10">
     <figure className="">
   
       <GatsbyImage image={data.datoCmsProjetDeFerriere.imageSectionUnCaracteristique.gatsbyImageData}
@@ -35,13 +35,13 @@ const Caracteristique = () => {
       className="h-full"/>
     </figure>
     <div className=" ">
-      <div className=""
+      <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.paragrapheUnSectionUnCaracteristique
           }}
         /> 
     </div>
-    <div className="flex flex-col space-y-5 col-span-2"          dangerouslySetInnerHTML={{
+    <div className="flex flex-col paragraphe space-y-5 col-span-2"          dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.paragrapheUnSectionDeuxCaracteristiqueCopy1
           }}
         /> 

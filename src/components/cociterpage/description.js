@@ -29,11 +29,15 @@ const Description = () => {
         <h2 className=" text-xl md:text-3xl  text-white  font-black ">
           {data.datoCmsCociter.titreDescription}
         </h2>
-         <div className=""
+         <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsCociter.texteDescription    
           }} />
-        </div>
+          
+        <a href="https://www.cociter.be"  rel="noreferrer" target="_blank" >
+      <button className="bg-white text-secondary-color mt-10 py-2 px-5 w-max text-xl font-black rounded">
+      Découvrir COCITER</button></a>
+      </div>
       </section>
     </article>
   );

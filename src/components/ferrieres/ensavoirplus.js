@@ -34,7 +34,7 @@ const Savoir = () => {
  image={data.datoCmsProjetDeFerriere.imageEtudeDIncidence.gatsbyImageData}
         alt={data.datoCmsProjetDeFerriere.imageEtudeDIncidence.data} />
       </figure>
-      <h3 className="text-3xl text-primary-color">{data.datoCmsProjetDeFerriere.titreEtudeDIncidence}</h3>
+      <h3 className="text-xl font-black text-primary-color">{data.datoCmsProjetDeFerriere.titreEtudeDIncidence}</h3>
      <div className=""
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.texteImageDIncidence
@@ -42,7 +42,7 @@ const Savoir = () => {
         /> 
       <button className=" hover:opacity-70 bg-secondary-color w-max p-2 rounded font-black text-white">
     {" "}
-    Bouton{" "}
+    En savoir plus{" "}
   </button>
     </div>
     <div className="flex flex-col gap-y-5 ">
@@ -51,7 +51,7 @@ const Savoir = () => {
  image={data.datoCmsProjetDeFerriere.imageSectionDeux.gatsbyImageData}
         alt={data.datoCmsProjetDeFerriere.imageSectionDeux.data} />
       </figure>
-      <h3 className="text-3xl text-primary-color">{data.datoCmsProjetDeFerriere.titreSectionDeux}</h3>
+      <h3 className="text-xl font-black text-primary-color">{data.datoCmsProjetDeFerriere.titreSectionDeux}</h3>
       <div className=""
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.texteSectionDeux
@@ -59,7 +59,7 @@ const Savoir = () => {
         /> 
       <button className=" hover:opacity-70 bg-secondary-color w-max p-2 rounded font-black text-white">
     {" "}
-    Bouton{" "}
+    En savoir plus{" "}
   </button>
     </div>
   </section>

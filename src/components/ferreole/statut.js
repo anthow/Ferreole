@@ -38,7 +38,7 @@ const Statut = () => {
             __html: data.datoCmsPageFerreole.texteStatut
           }}
         />    <Link to="/statuts">
-    <button className=" text-gray-600 bg-white p-2 w-max">
+    <button className=" bg-white text-primary-color py-2 px-5 w-max text-xl font-black rounded">
       Voir les statuts complets
     </button>
     </Link>

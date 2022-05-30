@@ -22,8 +22,8 @@ const Header = () => {
     /> 
   </figure>
   <section className="flex flex-col gap-y-5">
-    <h1 className="text-4xl">Ferréole</h1>
-    <div className=""
+    <h1 className="text-2xl md:text-3xl text-secondary-color  font-black">Ferréole</h1>
+    <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsContact.texteContact
           }}

@@ -26,15 +26,14 @@ export default function NavBarLink() {
               <li className=" text-primary-color hover:opacity-70"> Projet de Ferrières</li>
               </Link>
               <li className="text-primary-color hover:opacity-70"> Vents d’Autelbas</li>
-              <li className="text-primary-color hover:opacity-70"> Projets Sofico</li>
-              <li className=" text-primary-color hover:opacity-70"> Photovoltaïque Ernonheid</li>
+              <li className="text-primary-color hover:opacity-70"> Autres projets</li>
             </ul>
           </div>
         </li>
         {/* fin menu déroulant */}
         <Link to="/cociter">
 
-        <li className="hover:opacity-70">Cociter</li>
+        <li className="hover:opacity-70">COCITER</li>
         </Link>
         <Link to="/devenir-cooperateur">
         </Link>

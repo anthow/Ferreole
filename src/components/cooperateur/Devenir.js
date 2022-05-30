@@ -22,16 +22,16 @@ const Devenir = () => {
     alt={data.datoCmsDevenezCooperateur.imageCommentDevenirCooperateur.alt} />
   </figure>
   <section className="order-2 md:order-1 flex flex-col space-y-5">
-    <h2 className="text-4xl">
+    <h2 className="text-2xl md:text-3xl text-secondary-color  font-black">
       {" "}
 {data.datoCmsDevenezCooperateur.titreCooperateur}    </h2>
-<div className=""
+<div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsDevenezCooperateur.texteCommentDevenirCooperateur
           }}
         /> 
         <Link to="../comment-devenir-cooperateur">
-    <button className=" bg-gray-600 text-white p-2 w-max">
+    <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
       {" "}
       voir les informations complètes{" "}
     </button>

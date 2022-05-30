@@ -12,9 +12,9 @@ const FerreolePage = () => {
   return (
     <Layout>
      <Header />
+     <Equipe />
      <Valeurs />
    <Projets />
-<Equipe />
 <Statut />
 <Rescoop />     
      

@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const Rescoop = () => {
@@ -28,21 +28,21 @@ const Rescoop = () => {
 }
   `)
   return       <article className="w-10/12 m-auto flex flex-col gap-y-20 py-20 ">
-  <h2 className="text-2xl  text-center">REScoop Wallonie</h2>
+  <h2 className="text-2xl md:text-3xl text-secondary-color  font-black  text-center">REScoop Wallonie</h2>
   <section className="flex flex-col gap-20 md:grid grid-cols-2">
 
   <GatsbyImage image={data.datoCmsPageFerreole.imageQuEstCeQuUneCoopRativeAgrE.gatsbyImageData}
   alt={data.datoCmsPageFerreole.imageQuEstCeQuUneCoopRativeAgrE.gatsbyImageData} />
   <div className="flex flex-col gap-y-10">
-      <h3 className="text-xl">{data.datoCmsPageFerreole.titreQuEstCeQuUneCooperativeAgree}</h3>
+      <h3 className="text-xl font-black text-primary-color">{data.datoCmsPageFerreole.titreQuEstCeQuUneCooperativeAgree}</h3>
       <div className=""
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteQuEstCeQuUneCooprrativeAgree
           }}
         /> 
-      <button className=" bg-gray-600 text-white p-2 w-max">
+      <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
     {" "}
-    Bouton{" "}
+    En savoir plus{" "}
   </button>
   </div>
   </section>
@@ -53,32 +53,18 @@ const Rescoop = () => {
  image={data.datoCmsPageFerreole.imageLaCharteEnergieCitoyenne.gatsbyImageData}
   alt={data.datoCmsPageFerreole.imageLaCharteEnergieCitoyenne.gatsbyImageData} />
   <div className="flex flex-col gap-y-10 md:order-1">
-      <h3 className="text-xl">{data.datoCmsPageFerreole.titreLaCharteEnergieCitoyenne}</h3>
+      <h3 className="text-xl font-black text-primary-color">{data.datoCmsPageFerreole.titreLaCharteEnergieCitoyenne}</h3>
       <div className=""
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteLaCharteEnergieCitoyenne
           }}
-        />       <button className=" bg-gray-600 text-white p-2 w-max">
+        />     
+        <Link to="../charte">
+          <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
     {" "}
-    Bouton{" "}
+    En savoir plus{" "}
   </button>
-  </div>
-  </section>
-  <section className="flex flex-col gap-20 md:grid grid-cols-2">
-
-    <GatsbyImage      className=""
- image={data.datoCmsPageFerreole.imageRescoopLaFederationDesCoopsDenergie.gatsbyImageData}
-  alt={data.datoCmsPageFerreole.imageRescoopLaFederationDesCoopsDenergie.gatsbyImageData} />
-  <div className="flex flex-col gap-y-10">
-      <h3 className="text-xl">{data.datoCmsPageFerreole.titreRescoopLaFederationDesCoopsDEnergie} </h3>
-      <div className=""
-          dangerouslySetInnerHTML={{
-            __html: data.datoCmsPageFerreole.texteRescoopLaFederationDesCoopsDenergie
-          }}
-        />       <button className=" bg-gray-600 text-white p-2 w-max">
-    {" "}
-    Bouton{" "}
-  </button>
+  </Link>
   </div>
   </section>
 </article>

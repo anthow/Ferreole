@@ -17,7 +17,7 @@ const Greenpeace = () => {
 
   `);
   return (
-    <article className="  py-20 bg-primary-color text-white  flex flex-col m-auto  gap-y-10 ">
+    <article className="  py-32 bg-primary-color text-white  flex flex-col m-auto  gap-y-10 ">
       <section className="w-10/12 m-auto items-center flex flex-col gap-x-20 gap-y-10 md:grid grid-cols-2">
         <figure className="m-auto order-1   ">
           <GatsbyImage
@@ -26,11 +26,11 @@ const Greenpeace = () => {
           />
         </figure>
     
-         <div className="order-2"
+         <div className="order-2 text-lg font-black"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsCociter.paragrapheUnGreenpeace    
           }} />
-            <div className=" order-3 col-span-2"
+            <div className=" order-3 pargraphe col-span-2"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsCociter.paragrapheDeuxGreenpeaceCopy1    
           }} />

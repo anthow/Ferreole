@@ -44,13 +44,13 @@ return(
     <section className="flex items-center flex-col gap-y-5">
 
       <GatsbyImage image={node.image.gatsbyImageData} alt={node.image.alt} className="rounded-full" />
-      <h3 className="text-xl ">{node.name} </h3>
+      <h3 className="text-xl font-black text-primary-color ">{node.name} </h3>
       <h4 className="text-lg">{node.fonction}</h4>
       <div className="flex flex-row gap-x-4">
      <a target="_blank" href={`mailto:${node.adresseMail}`}>
-     <FontAwesomeIcon icon={faEnvelope} size="1x" />        </a>
+     <FontAwesomeIcon icon={faEnvelope} size="1x" className="hover:opacity-80" />        </a>
         <a href={`tel:${node.telephone}`}>
-        <FontAwesomeIcon icon={faPhone} size="1x" />        </a>
+        <FontAwesomeIcon icon={faPhone} size="1x" className="hover:opacity-80" />        </a>
       </div>
     </section>)})}
 </article>

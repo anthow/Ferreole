@@ -5,26 +5,26 @@ import { GatsbyImage } from "gatsby-plugin-image"
 const Formulaire = () => {
 
   return          <article className=" w-10/12 md:w-6/12 flex flex-col m-auto gap-y-10">
-  <h2 className="text-4xl text-center"> Formulaire de contact</h2>
+  <h2 className="text-2xl md:text-3xl text-secondary-color  font-black text-center"> Formulaire de contact</h2>
   <form className="flex flex-col gap-y-5">
     <div className="flex flex-col gap-y-2" >
       {" "}
-      <label> nom </label>
+      <label className="text-primary-color"> Nom </label>
       <input type="text" className="w-max border"></input>
     </div>
     <div className="flex flex-col gap-y-2" >
       {" "}
-      <label> adresse mail </label>
+      <label className="text-primary-color"> Adresse mail </label>
       <input type="mail" className=" w-max border"></input>
     </div>
     <div className="flex flex-col gap-y-2" >
       {" "}
-      <label> message </label>
+      <label className="text-primary-color"> Message </label>
       <textarea className="w-full border" rows='10'></textarea>
     </div>
-    <button className=" bg-gray-600 text-white p-2 w-max">
+    <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
       {" "}
-      Bouton{" "}
+      Envoyer{" "}
     </button>   
   </form>
 </article>

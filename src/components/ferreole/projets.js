@@ -46,7 +46,7 @@ const Projets = () => {
       
       <button className=" hover:opacity-70 bg-secondary-color w-max p-2 rounded font-black text-white">
         {" "}
-        Bouton{" "}
+        En savoir plus{" "}
       </button>
     </section>
     <section className="flex flex-col gap-y-5">
@@ -64,7 +64,7 @@ const Projets = () => {
    
    <button className=" hover:opacity-70 bg-secondary-color w-max p-2 rounded font-black text-white">
      {" "}
-     Bouton{" "}
+     En savoir plus{" "}
    </button>
  </section>
  <section className="flex flex-col gap-y-5">
@@ -82,7 +82,7 @@ const Projets = () => {
    
    <button className=" hover:opacity-70 bg-secondary-color w-max p-2 rounded font-black text-white">
      {" "}
-     Bouton{" "}
+     En savoir plus{" "}
    </button>
  </section>
    

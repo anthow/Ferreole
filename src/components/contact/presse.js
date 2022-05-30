@@ -21,7 +21,7 @@ const Presse = () => {
     }
   }
   `)
-  return     <>    <h2 className="text-4xl text-center"> Presse</h2>
+  return     <>    <h2 className="text-2xl md:text-3xl text-secondary-color  font-black text-center"> Presse</h2>
     <article className="w-10/12 m-auto gap-x-20 gap-y-20 flex flex-col md:grid grid-cols-2 ">
   <figure className="">
       
@@ -30,12 +30,12 @@ const Presse = () => {
       />
     </figure>
     <section className="flex flex-col gap-y-5">
-        <h3 className="text-3xl">{data.datoCmsContact.titreContactPresse}</h3>
+        <h3 className="text-xl font-black text-primary-color">{data.datoCmsContact.titreContactPresse}</h3>
         <div className=""
           dangerouslySetInnerHTML={{
             __html: data.datoCmsContact.texteDossierDePressega
           }}
-        />         <button className=" bg-gray-600 text-white p-2 w-max">
+        />         <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
         {" "}
         Bouton{" "}
       </button>  
@@ -46,12 +46,12 @@ const Presse = () => {
       />
     </figure>
     <section className="flex flex-col gap-y-5 order-2 md:order-1">
-        <h3 className="text-3xl">{data.datoCmsContact.titreDossierDePresse}</h3>
+        <h3 className="text-xl font-black text-primary-color">{data.datoCmsContact.titreDossierDePresse}</h3>
         <div className=""
           dangerouslySetInnerHTML={{
             __html: data.datoCmsContact.texteDossierDePresse
           }}
-        />          <button className=" bg-gray-600 text-white p-2 w-max">
+        />          <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
         {" "}
         Bouton{" "}
       </button>  
