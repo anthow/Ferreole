@@ -17,8 +17,8 @@ const Header = () => {
   `)
   return        <article 
   className=" ferriere py-20 md:py-40 text-white">
-  <section className=" w-10/12 m-auto ">
-    <div className="md:w-6/12 flex flex-col gap-y-5 ">
+  <section className=" w-10/12 m-auto  ">
+    <div className="md:w-6/12 flex flex-col p-2 bg-primary-color opacity-80  gap-y-5 ">
       <h1 className="text-5xl">{data.datoCmsProjetDeFerriere.titreHeader}</h1>
       <div className=""
           dangerouslySetInnerHTML={{

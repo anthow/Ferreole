@@ -1,29 +1,14 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { StaticImage } from "gatsby-plugin-image";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-    faEnvelope,
-    faPhone,
-    faAddressBook,
-    faAirFreshener,
-    faAmbulance,
-    faAtom,
-    faBus,
-    faCoins,
-    faDice,
-  } from '@fortawesome/free-solid-svg-icons'
   
 const Equipe = () => {
   const data = useStaticQuery(graphql`
         {
-      allDatoCmsEquipe {
+      allDatoCmsEquipe (sort: { order: ASC, fields: id }) {
         edges {
           node {
-            adresseMail
             name
-            telephone
             fonction
             image {
               alt
@@ -47,10 +32,6 @@ return(
       <h3 className="text-xl font-black text-primary-color ">{node.name} </h3>
       <h4 className="text-lg">{node.fonction}</h4>
       <div className="flex flex-row gap-x-4">
-     <a target="_blank" href={`mailto:${node.adresseMail}`}>
-     <FontAwesomeIcon icon={faEnvelope} size="1x" className="hover:opacity-80" />        </a>
-        <a href={`tel:${node.telephone}`}>
-        <FontAwesomeIcon icon={faPhone} size="1x" className="hover:opacity-80" />        </a>
       </div>
     </section>)})}
 </article>

@@ -11,7 +11,7 @@ const ContactPage = ({ data }) => {
     <article className="flex flex-col gap-y-10">
         <section>
     <h1 className="text-primary-color text-3xl">{data.datoCmsActualite.titreDeLArticle}</h1>
-    <p className="text-xs text-primary-color italic"> rédigé par {data.datoCmsActualite.auteur.name} le {data.datoCmsActualite.meta.publishedAt}
+    <p className="text-xs text-primary-color italic">{data.datoCmsActualite.auteurEtDate} 
     </p>
     </section>
     <div className="italic"
@@ -36,10 +36,8 @@ export const query = graphql`
       slug
       texteArticle
       titreDeLArticle
-      chapeauArticle
-      auteur {
-        name
-      }     
+      auteurEtDate
+      chapeauArticle    
       seo {
         description
         title
@@ -47,9 +45,6 @@ export const query = graphql`
         image {
           gatsbyImageData
         }
-      }
-      meta {
-        publishedAt(formatString: "DD/MM/YYYY")
       }
       imageArticle {
         alt

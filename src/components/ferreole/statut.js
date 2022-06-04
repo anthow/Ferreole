@@ -39,7 +39,7 @@ const Statut = () => {
           }}
         />    <Link to="/statuts">
     <button className=" bg-white text-primary-color py-2 px-5 w-max text-xl font-black rounded">
-      Voir les statuts complets
+    Statuts complets  2012 + modifications 2019
     </button>
     </Link>
   </section>

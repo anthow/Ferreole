@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const Presse = () => {
@@ -31,14 +31,11 @@ const Presse = () => {
     </figure>
     <section className="flex flex-col gap-y-5">
         <h3 className="text-xl font-black text-primary-color">{data.datoCmsContact.titreContactPresse}</h3>
-        <div className=""
+        <div className="paragraphe"
           dangerouslySetInnerHTML={{
-            __html: data.datoCmsContact.texteDossierDePressega
+            __html: data.datoCmsContact.texteContactPresse
           }}
-        />         <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
-        {" "}
-        Bouton{" "}
-      </button>  
+        />         
     </section>
     <figure className="order-1 md:order-2">
     <GatsbyImage image={data.datoCmsContact.imageDossierPresse.gatsbyImageData}
@@ -51,10 +48,14 @@ const Presse = () => {
           dangerouslySetInnerHTML={{
             __html: data.datoCmsContact.texteDossierDePresse
           }}
-        />          <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
+        />       
+        <Link to="/info-presse">
+           <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
         {" "}
-        Bouton{" "}
+        Ensavoir plus{" "}
+        
       </button>  
+      </Link>
     </section>
   </article>
   </>
