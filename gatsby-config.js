@@ -10,7 +10,8 @@ module.exports = {
 
 
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap",`gatsby-plugin-fontawesome-css`, {
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet",
+   "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
