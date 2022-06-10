@@ -60,14 +60,14 @@ const Caracteristique = () => {
     </figure>
     <div className=" flex flex-col md:order-1 space-y-10">
       <h3 className="text-3xl font-bold text-secondary-color">{data.datoCmsProjetDeFerriere.titreSectionDeuxCaracteristique}</h3>
-      <div className="flex flex-col paragraphef space-y-5"
+      <div className="flex flex-col paragraphe space-y-5"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.paragrapheDeuxSectionUnCaracteristique
           }}
         /> 
     </div>
     <div className=" col-span-2 md:order-3 paragraphef flex flex-col space-y-5">
-    <div className=""
+    <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.paragrapheDeuxSectionDeuxCaracteristique
           }}

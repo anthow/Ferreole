@@ -27,7 +27,7 @@ const Contact = () => {
         <div className=" fle flex-col gap-y-5 bg-secondary-color p-10 text-lg text-white order-2 md:order-1">
      
           <div
-            className=""
+            className="paragraphe"
             dangerouslySetInnerHTML={{
               __html: data.datoCmsCociter.texteContact,
             }}

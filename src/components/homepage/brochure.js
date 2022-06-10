@@ -26,7 +26,7 @@ const Brochure = () => {
       <h2 className="text-3xl text-secondary-color  font-black ">
       {data.datoCmsPageDAccueil.titreBrochure}
       </h2>
-      <div className="text-lg"
+      <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageDAccueil.texteBrochure
           }}

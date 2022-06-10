@@ -31,9 +31,15 @@ const Home = () => {
             __html: data.datoCmsPageDAccueil.texteQuiSommesNous
           }}
         />
+        <div className="flex flex-col md:flex-row gap-x-10">
         <Link to="/ferreole">
-    <button className="bg-white text-primary-color py-2 px-5 w-max text-xl font-black rounded">Découvrir Ferréole</button>
+    <button className="bg-white text-primary-color hover:opacity-90 py-2 px-5 w-max text-xl font-black rounded">Découvrir Ferréole</button>
     </Link>
+    <a href="https://www.cociter.be/" target="_blank" rel="noreferrer" >
+    <button className="bg-white text-primary-color hover:opacity-90 py-2 px-5 w-max text-xl font-black rounded">Découvrir Cociter</button>
+    </a>
+    </div>
+
     </div>
   
  

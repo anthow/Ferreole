@@ -45,7 +45,7 @@ return(
             __html: node.chapeauArticle
           }}
         />
-    <a className="italic text-xs font-bold text-secondary-color ">      <Link to={"blog/" + node.slug}>  
+    <a className="italic text-xs font-bold text-secondary-color ">      <Link to={"actu/" + node.slug}>  
 lire la suite...     </Link>
 </a>
   </div>

@@ -11,7 +11,7 @@ const Footer = () => {
 <SectionTwo />
 <SectionThree />
 </article>
-<p className="w-10/12 text-center m-auto">@Férréole</p>
+<p className="w-10/12 text-center m-auto">@Ferréole</p>
     </footer>
 
   );

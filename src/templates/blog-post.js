@@ -19,7 +19,7 @@ const ContactPage = ({ data }) => {
             __html: data.datoCmsActualite.chapeauArticle
           }}
         />
-          <div className=""
+          <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsActualite.texteArticle
           }}

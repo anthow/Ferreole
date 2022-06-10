@@ -21,6 +21,7 @@ const Timeline = () => {
 
         {data.datoCmsProjetDeFerriere.titreSectionAvance}{" "}
       </h2>
+      <p className="text-center text-primary-color">Timing provisoire</p>
       <div class="container  mx-auto w-full h-full">
         <div class="relative wrap overflow-hidden p-10 h-full">
           <div

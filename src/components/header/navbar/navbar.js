@@ -12,7 +12,7 @@ const Navbar = () => {
         datoCmsGeneral {
           logo {
             alt
-            gatsbyImageData(height: 74)
+            gatsbyImageData(height: 125)
 
           }
         }

@@ -22,7 +22,7 @@ const Savoir = () => {
       }
     }
   `)
-  return     <>   <article className="flex flex-col space-y-20">
+  return     <>   <article className="hidden flex flex-col space-y-20">
   <h2 className="text-center text-secondary-color text-4xl">
     Vous souhaitez en savoir plus ?
   </h2>
@@ -35,7 +35,7 @@ const Savoir = () => {
         alt={data.datoCmsProjetDeFerriere.imageEtudeDIncidence.data} />
       </figure>
       <h3 className="text-xl font-black text-primary-color">{data.datoCmsProjetDeFerriere.titreEtudeDIncidence}</h3>
-     <div className=""
+     <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.texteImageDIncidence
           }}
@@ -52,7 +52,7 @@ const Savoir = () => {
         alt={data.datoCmsProjetDeFerriere.imageSectionDeux.data} />
       </figure>
       <h3 className="text-xl font-black text-primary-color">{data.datoCmsProjetDeFerriere.titreSectionDeux}</h3>
-      <div className=""
+      <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.texteSectionDeux
           }}

@@ -5,15 +5,27 @@
 
 body{font-family: "roboto";}
 h1,h2,h3,h4,h5,h6{font-family: "lora";}
+
+
+p,a, .paragraphe ul li, .paragraphe h3, .paragraphe h3 {
+    font-size:110%;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
 .timeline{
     left: 50% !important;
 }
 
 .paragraphe p {
     margin-bottom: 20px;
+}
+
+.paragraphe ul li {
+    margin-bottom: 10px;
+    list-style-type:circle;
 }
 
 article.ferriere{

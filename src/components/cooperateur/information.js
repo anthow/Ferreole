@@ -34,7 +34,7 @@ const Information = () => {
     </figure>
     <div className="flex flex-col gap-y-5">
       <h3 className="text-3xl"> {data.datoCmsDevenezCooperateur.titreInformationPratiqueSectionUn} </h3>
-      <div className=""
+      <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsDevenezCooperateur.paragrapheUnInformationPratiqueSectionUn
           }}

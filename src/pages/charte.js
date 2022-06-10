@@ -19,7 +19,7 @@ const ChartePage = ({ data }) => {
         </h1>
         <section className="flex-flex-col gap-y-10">
           <h2 className="text-2xl text-primary-color mb-10"> {data.datoCmsPageCharteEnergieCitoyenne.titrePrincipes}</h2>
-          <div className=""
+          <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageCharteEnergieCitoyenne.textePrincipe
           }}
@@ -27,7 +27,7 @@ const ChartePage = ({ data }) => {
         </section>
         <section className="flex-flex-col gap-y-5">
           <h2 className="text-2xl text-primary-color mb-10"> {data.datoCmsPageCharteEnergieCitoyenne.titreConstat}</h2>
-          <div className=""
+          <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageCharteEnergieCitoyenne.texteConstat
           }}
@@ -35,7 +35,7 @@ const ChartePage = ({ data }) => {
         </section>
         <section className="flex-flex-col gap-y-5">
           <h2 className="text-2xl text-primary-color mb-10"> {data.datoCmsPageCharteEnergieCitoyenne.titreVision}</h2>
-          <div className=""
+          <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageCharteEnergieCitoyenne.texteVision
           }}
@@ -43,7 +43,7 @@ const ChartePage = ({ data }) => {
         </section>
         <section className="flex-flex-col gap-y-5">
           <h2 className="text-2xl text-primary-color mb-10"> {data.datoCmsPageCharteEnergieCitoyenne.titreMission}</h2>
-          <div className=""
+          <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageCharteEnergieCitoyenne.texteMission
           }}
@@ -51,7 +51,7 @@ const ChartePage = ({ data }) => {
         </section>
         <section className="flex-flex-col gap-y-5">
           <h2 className="text-2xl text-primary-color mb-10"> {data.datoCmsPageCharteEnergieCitoyenne.titreEngagement}</h2>
-          <div className=""
+          <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageCharteEnergieCitoyenne.texteEngagement
           }}

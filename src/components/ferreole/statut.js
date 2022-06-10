@@ -25,7 +25,7 @@ const Statut = () => {
     <div className="flex flex-col gap-y-10">
       <h2 className="text-2xl  text-white ">{data.datoCmsPageFerreole.titreStatuts} </h2>
       
-      <div className="text-lg"
+      <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.introductionStatut
           }}
@@ -33,7 +33,7 @@ const Statut = () => {
     </div>
   </section>
   <section className="flex flex-col gap-y-10 w-10/12 m-auto ">
-  <div className=""
+  <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteStatut
           }}

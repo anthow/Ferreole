@@ -38,7 +38,7 @@ const Projets = () => {
       />
       <h3 className="text-xl font-black text-primary-color ">{data.datoCmsPageFerreole.titreProjetDeFerrieres}</h3>
    
-      <div className=""
+      <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteDeProjetDeFerriere
           }}

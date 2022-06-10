@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const SectionTwo = () => {
   return (
     <article className="flex flex-col gap-y-5">
-      <h4 className="text-xl ">Férréole</h4>
+      <h4 className="text-xl ">Ferréole</h4>
       <p>
         Rue du Burnontige 20, <br />
         4190 Ferrières

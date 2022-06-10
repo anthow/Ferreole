@@ -44,7 +44,7 @@ const Presse = () => {
     </figure>
     <section className="flex flex-col gap-y-5 order-2 md:order-1">
         <h3 className="text-xl font-black text-primary-color">{data.datoCmsContact.titreDossierDePresse}</h3>
-        <div className=""
+        <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsContact.texteDossierDePresse
           }}

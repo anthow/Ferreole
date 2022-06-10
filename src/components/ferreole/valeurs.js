@@ -50,7 +50,7 @@ const Valeurs = () => {
       />
       <div className="text-white flex gap-y-2 flex-col text-center">
         <h3 className="text-xl">{data.datoCmsPageFerreole.titreValeurUne}</h3>
-        <div className=""
+        <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteValeurUn
           }}
@@ -65,7 +65,7 @@ const Valeurs = () => {
       />
       <div className="text-white flex gap-y-2 flex-col text-center">
         <h3 className="text-xl">{data.datoCmsPageFerreole.titreValeurDeux}</h3>
-        <div className=""
+        <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteValeurDeux
           }}
@@ -80,7 +80,7 @@ const Valeurs = () => {
       />
       <div className="text-white flex gap-y-2 flex-col text-center">
         <h3 className="text-xl">{data.datoCmsPageFerreole.titreValeurTrois}</h3>
-        <div className=""
+        <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteValeurTrois
           }}
@@ -95,7 +95,7 @@ const Valeurs = () => {
       />
       <div className="text-white flex gap-y-2 flex-col text-center">
         <h3 className="text-xl">{data.datoCmsPageFerreole.titreValeurQuatre}</h3>
-        <div className=""
+        <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteValeurQuatre
           }}
@@ -109,7 +109,7 @@ const Valeurs = () => {
       />
       <div className="text-white flex gap-y-2 flex-col text-center">
         <h3 className="text-xl">{data.datoCmsPageFerreole.titreValeurCinq}</h3>
-        <div className=""
+        <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteValeurCinq
           }}

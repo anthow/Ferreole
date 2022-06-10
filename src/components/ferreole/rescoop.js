@@ -35,7 +35,7 @@ const Rescoop = () => {
   alt={data.datoCmsPageFerreole.imageQuEstCeQuUneCoopRativeAgrE.gatsbyImageData} />
   <div className="flex flex-col gap-y-10">
       <h3 className="text-xl font-black text-primary-color">{data.datoCmsPageFerreole.titreQuEstCeQuUneCooperativeAgree}</h3>
-      <div className=""
+      <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteQuEstCeQuUneCooprrativeAgree
           }}
@@ -54,7 +54,7 @@ const Rescoop = () => {
   alt={data.datoCmsPageFerreole.imageLaCharteEnergieCitoyenne.gatsbyImageData} />
   <div className="flex flex-col gap-y-10 md:order-1">
       <h3 className="text-xl font-black text-primary-color">{data.datoCmsPageFerreole.titreLaCharteEnergieCitoyenne}</h3>
-      <div className=""
+      <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteLaCharteEnergieCitoyenne
           }}
