@@ -18,7 +18,7 @@ const Statut = () => {
     }
   }
   `)
-  return    <>  <article className="py-20 text-white bg-primary-color">
+  return    <>  <article id="statuts" className="py-20 text-white bg-primary-color">
   <section className="w-10/12 mb-20 m-auto flex flex-col md:grid gap-20 grid-cols-2">
   
     <GatsbyImage image={data.datoCmsPageFerreole.imageStatut.gatsbyImageData} />

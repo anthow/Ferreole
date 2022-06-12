@@ -19,7 +19,7 @@ const Equipe = () => {
       }
     }
   `)
-  return    <> <h2 className=" mb-10 pt-10 w-10/12 m-auto  text-center text-3xl text-secondary-color  font-black   ">L'équipe </h2>
+  return    <> <h2 id="equipe" className=" mb-10 pt-10 w-10/12 m-auto  text-center text-3xl text-secondary-color  font-black   ">L'équipe </h2>
 
   <article className="w-10/12 m-auto pb-10 flex flex-col md:grid grid-cols-3 gap-20 ">
   {   

@@ -22,7 +22,7 @@ const Header = () => {
     alt={data.datoCmsPageFerreole.imageHeader.alt}
     />
   </figure>
-  <section className="w-10/12 flex py-20 flex-col gap-y-10 m-auto">
+  <section id="quisommesnous" className="w-10/12 flex py-20 flex-col gap-y-10 m-auto">
     <h1 className="text-3xl text-secondary-color  font-black ">
       {" "}
       {data.datoCmsPageFerreole.titreHeader}

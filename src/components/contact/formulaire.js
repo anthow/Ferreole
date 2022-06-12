@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 const Formulaire = () => {
 
-  return          <article className=" w-10/12 md:w-6/12 flex flex-col m-auto gap-y-10">
+  return          <article id="contact" className=" w-10/12 md:w-6/12 flex flex-col m-auto gap-y-10">
   <h2 className="text-2xl md:text-3xl text-secondary-color  font-black text-center"> Formulaire de contact</h2>
   <form className="flex flex-col gap-y-5">
     <div className="flex flex-col gap-y-2" >

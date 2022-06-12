@@ -15,8 +15,8 @@ const FerreolePage = () => {
      <Equipe />
      <Valeurs />
    <Projets />
+   <Rescoop />     
 <Statut />
-<Rescoop />     
      
    
     </Layout>

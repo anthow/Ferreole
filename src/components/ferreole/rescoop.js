@@ -27,7 +27,7 @@ const Rescoop = () => {
   }
 }
   `)
-  return       <article className="w-10/12 m-auto flex flex-col gap-y-20 py-20 ">
+  return       <article id="rescoop" className="w-10/12 m-auto  flex flex-col gap-y-20 py-20 ">
   <h2 className="text-2xl md:text-3xl text-secondary-color  font-black  text-center">REScoop Wallonie</h2>
   <section className="flex flex-col gap-20 md:grid grid-cols-2">
 

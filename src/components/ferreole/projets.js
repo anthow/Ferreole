@@ -29,7 +29,7 @@ const Projets = () => {
     }
   `)
   return   <> 
-  <h2 className="text-2xl md:text-3xl font-black mb-10 pt-10 w-10/12 m-auto text-3xl text-secondary-color  font-black   ">Nos projets </h2>
+  <h2 id="projets" className="text-2xl md:text-3xl font-black mb-10 pt-10 w-10/12 m-auto text-3xl text-secondary-color  font-black   ">Nos projets </h2>
   <article className="w-10/12 m-auto pb-10 flex flex-col md:grid grid-cols-2 gap-20 ">
     <section className="flex flex-col gap-y-5">
    

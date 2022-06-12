@@ -21,7 +21,7 @@ const Presse = () => {
     }
   }
   `)
-  return     <>    <h2 className="text-2xl md:text-3xl text-secondary-color  font-black text-center"> Presse</h2>
+  return     <>    <h2 id="presse" className="text-2xl md:text-3xl text-secondary-color  font-black text-center"> Presse</h2>
     <article className="w-10/12 m-auto gap-x-20 gap-y-20 flex flex-col md:grid grid-cols-2 ">
   <figure className="">
       
