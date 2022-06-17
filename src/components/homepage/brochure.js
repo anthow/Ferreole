@@ -7,16 +7,16 @@ const Brochure = () => {
     {
       datoCmsPageDAccueil {
         imageBrochure {
-          alt
-          gatsbyImageData
+          alt 
+          gatsbyImageData (height : 800)
         }
         titreBrochure
         texteBrochure
       }
     }
   `)
-  return     <article className="  py-20 md:py-0 md:min-h-9/10 flex flex-col m-auto bg-white ">
-  <section className="w-10/12 m-auto items-center flex flex-col gap-y-5  gap-x-4 md:grid grid-cols-2">
+  return     <article className="   md:py-0 md:min-h-9/10 flex flex-col m-auto bg-white ">
+  <section className="w-10/12 m-auto items-center py-20 flex flex-col gap-y-5  gap-x-4 md:grid grid-cols-2">
     <figure className="m-auto   order-1">
   
             <GatsbyImage image={data.datoCmsPageDAccueil.imageBrochure.gatsbyImageData} alt={data.datoCmsPageDAccueil.imageBrochure.alt} />
