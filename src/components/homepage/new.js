@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 const News = () => {
   const data = useStaticQuery(graphql`
     {
-      allDatoCmsActualite {
+      allDatoCmsActualite(limit: 4, sort: {fields: meta___firstPublishedAt, order: DESC}) {
         edges {
           node {
             slug
@@ -17,7 +17,7 @@ const News = () => {
         
             imageArticle {
               alt
-              gatsbyImageData
+              gatsbyImageData (height:285, layout: FIXED)
             }
           }
         }
@@ -34,8 +34,8 @@ const News = () => {
 return(
 
 
-  <div className="flex flex-col gap-y-5">
-        <GatsbyImage image={node.imageArticle.gatsbyImageData} alt={node.imageArticle.alt} />
+  <div className="flex flex-col gap-y-5 ">
+        <GatsbyImage image={node.imageArticle.gatsbyImageData} alt={node.imageArticle.alt} className="self-center" />
 
   <div>
     <h3 className="text-xl font-black text-primary-color ">{node.titreDeLArticle}</h3>

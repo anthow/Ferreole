@@ -6,6 +6,7 @@
 body{font-family: "roboto";}
 h1,h2,h3,h4,h5,h6{font-family: "lora";}
 
+.paragraphe a{text-decoration: underline;}
 
 p,a, .paragraphe ul li, .paragraphe h3, .paragraphe h3 {
     font-size:110%;

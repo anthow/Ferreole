@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const DevenirCooperateur = () => {
@@ -30,10 +30,11 @@ const DevenirCooperateur = () => {
             __html: data.datoCmsPageDAccueil.texteDevenezCooperateur
           }}
         />
-      <button className="bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
-      Devenir Coopérateur</button>
-    </div>
+                <Link to="/devenir-cooperateur">
 
+      <button className="bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
+      Devenir Coopérateur</button></Link>
+    </div>
 
   </section>
 </article>

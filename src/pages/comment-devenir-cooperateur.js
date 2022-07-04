@@ -42,7 +42,7 @@ const ChartePage = ({ data }) => {
         <div className=" flex flex-col md:grid grid-cols-2 md:gap-x-20 py-5">
 
         <section className="flex-flex-col gap-y-5">
-          <h2 className="text-2xl text-primary-color"> {data.datoCmsPageCompletDevenirCooperateur.titreAvantage}</h2>
+          <h2 className="text-2xl text-primary-color mb-5"> {data.datoCmsPageCompletDevenirCooperateur.titreAvantage}</h2>
           <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageCompletDevenirCooperateur.texteAvantage
@@ -50,7 +50,7 @@ const ChartePage = ({ data }) => {
         />
         </section>
         <section className="flex-flex-col gap-y-5">
-          <h2 className="text-2xl text-primary-color"> {data.datoCmsPageCompletDevenirCooperateur.titreContrainte}</h2>
+          <h2 className="text-2xl text-primary-color mb-5"> {data.datoCmsPageCompletDevenirCooperateur.titreContrainte}</h2>
           <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageCompletDevenirCooperateur.texteContrainte

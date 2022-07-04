@@ -52,7 +52,7 @@ const Presse = () => {
         <Link to="/info-presse">
            <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
         {" "}
-        Ensavoir plus{" "}
+        En savoir plus{" "}
         
       </button>  
       </Link>

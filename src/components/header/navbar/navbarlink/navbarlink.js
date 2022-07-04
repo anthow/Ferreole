@@ -60,7 +60,7 @@ export default function NavBarLink() {
         <li>
           <div className="dropdown inline-block relative">
             <button className=" f rounded flex md:inline-flex items-center">
-              <p className= "text-lg hover:opacity-70">Les projets</p>
+              <p className= "text-lg hover:opacity-70">Nos projets</p>
               <svg
                 className="ml-2 fill-current h-4 "
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,13 +77,20 @@ export default function NavBarLink() {
                 </li>
               </Link>
               <li className="text-primary-color hover:opacity-70">
-                {" "}
+              <Link to="/ferreole/#autelbas">
+
                 Vents d’Autelbas
+                </Link>
               </li>
+              <Link to="/ferreole/#autresprojets">
+
               <li className="text-primary-color hover:opacity-70">
+
                 {" "}
                 Autres projets
               </li>
+              </Link>
+
             </ul>
           </div>
         </li>
@@ -109,17 +116,23 @@ export default function NavBarLink() {
               </svg>
             </button>
             <ul className="dropdown-menu absolute bg-white p-5 hidden space-y-4 w-max  text-gray-700 pt-">
+            <Link to="/actu">
+
               <li className="text-primary-color hover:opacity-70">
                 Actualités
               </li>
+              </Link>
               <li className="text-primary-color hidden hover:opacity-70">
                 {" "}
                 Documents
               </li>
+              <a target="_blank" href="/brochure/eolien-rumeurs-et-realites.pdf">
+
               <li className="text-primary-color hover:opacity-70">
                 {" "}
                 Brochure « Rumeurs et Réalités sur l’éolien »
               </li>
+              </a >
               <li className="text-primary-color hidden hover:opacity-70">
                 {" "}
                 Newsletter

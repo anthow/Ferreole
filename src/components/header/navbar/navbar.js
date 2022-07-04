@@ -20,7 +20,7 @@ const Navbar = () => {
     `)
   return (
     <>
-    <nav className=" w-10/12 m-auto  flex justify-between items-center">
+    <nav className=" w-12/12 m-auto  flex justify-between items-center">
       <article className="flex gap-x-10 items-center">
         <Link to="/">
         <figure>

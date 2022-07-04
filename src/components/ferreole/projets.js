@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery,Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -43,13 +43,13 @@ const Projets = () => {
             __html: data.datoCmsPageFerreole.texteDeProjetDeFerriere
           }}
         />
-      
+      <Link to="../projets/ferrieres">
       <button className=" hover:opacity-70 bg-secondary-color w-max p-2 rounded font-black text-white">
         {" "}
         En savoir plus{" "}
-      </button>
+      </button></Link>
     </section>
-    <section className="flex flex-col gap-y-5">
+    <section id="autelbas" className="flex flex-col gap-y-5">
    
    <GatsbyImage image={data.datoCmsPageFerreole.imageVentsDAutelbas.gatsbyImageData}
    alt={data.datoCmsPageFerreole.imageVentsDAutelbas.alt}
@@ -63,7 +63,7 @@ const Projets = () => {
      />
    
  </section>
- <section className="col-span-2 flex flex-col md:grid gap-x-20 grid-cols-2 gap-y-5">
+ <section id="autresprojets" className="col-span-2 flex flex-col md:grid gap-x-20 grid-cols-2 gap-y-5">
    
    <GatsbyImage image={data.datoCmsPageFerreole.imageAutresProjets.gatsbyImageData}
    alt={data.datoCmsPageFerreole.imageAutresProjets.alt}
