@@ -25,6 +25,7 @@ const Projets = () => {
         texteDeProjetDeFerriere
         texteVentsDAutelbas
         texteAutresProjets
+        texteAutresProjetsDeux
       }
     }
   `)
@@ -65,9 +66,7 @@ const Projets = () => {
  </section>
  <section id="autresprojets" className="col-span-2 flex flex-col md:grid gap-x-20 grid-cols-2 gap-y-5">
    
-   <GatsbyImage image={data.datoCmsPageFerreole.imageAutresProjets.gatsbyImageData}
-   alt={data.datoCmsPageFerreole.imageAutresProjets.alt}
-   />
+  
    <div className="flex flex-col gap-y-5">
    <h3 className="text-xl font-black text-primary-color ">{data.datoCmsPageFerreole.titresAutresProjets}</h3>
 
@@ -76,7 +75,16 @@ const Projets = () => {
          __html: data.datoCmsPageFerreole.texteAutresProjets
        }}
      />
+ 
 </div>
+<GatsbyImage image={data.datoCmsPageFerreole.imageAutresProjets.gatsbyImageData}
+   alt={data.datoCmsPageFerreole.imageAutresProjets.alt}
+   />
+<div className="paragraphe col-span-2"
+       dangerouslySetInnerHTML={{
+         __html: data.datoCmsPageFerreole.texteAutresProjetsDeux
+       }}
+     />
  </section>
    
   </article>

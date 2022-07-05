@@ -13,7 +13,8 @@ const Statut = () => {
       titreStatuts
       imageStatut {
         alt
-        gatsbyImageData
+        gatsbyImageData ( width:1000 layout: CONSTRAINED)
+
       }
     }
   }
