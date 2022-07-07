@@ -35,7 +35,7 @@ const Navbar = () => {
       <article className="md:hidden">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
-          className="flex items-center px-3 py-2 border rounded  border-black hover:text-black hover:border-black"
+          className="flex items-center px-3 mr-2 py-2 border rounded  border-black hover:text-black hover:border-black"
         >
           <svg
             className="fill-current h-3 w-3"

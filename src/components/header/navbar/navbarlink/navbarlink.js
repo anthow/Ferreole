@@ -4,9 +4,9 @@ import React from "react";
 export default function NavBarLink() {
   return (
     <header className=" p-10 flex flex-col md:flex-row justify-between">
-      <ul className="flex flex-col items-center text-primary-color  gap-x-4 m-auto md:flex-row">
+      <ul className="flex flex-col  items-center text-primary-color gap-y-4  gap-x-4 m-auto md:flex-row">
         <Link to="/">
-          <li className="hover:opacity-70">Accueil</li>
+          <li className="hover:opacity-70 sefl-center">Accueil</li>
         </Link>
 
         {/* début menu déroulant */}
@@ -60,7 +60,9 @@ export default function NavBarLink() {
         <li>
           <div className="dropdown inline-block md:relative">
             <button className=" f rounded flex md:inline-flex items-center">
+              <Link to="/ferreole/#projets">
               <p className= "text-lg hover:opacity-70">Nos projets</p>
+              </Link>
               <svg
                 className="ml-2 fill-current h-4 "
                 xmlns="http://www.w3.org/2000/svg"

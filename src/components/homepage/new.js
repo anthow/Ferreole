@@ -35,7 +35,7 @@ return(
 
 
   <div className="flex flex-col gap-y-5 ">
-        <GatsbyImage image={node.imageArticle.gatsbyImageData} alt={node.imageArticle.alt} className="self-center" />
+        <GatsbyImage image={node.imageArticle.gatsbyImageData} alt={node.imageArticle.alt} className="self-center max-w-full" />
 
   <div>
     <h3 className="text-xl font-black text-primary-color ">{node.titreDeLArticle}</h3>

@@ -7,7 +7,9 @@ const ContactPage = ({ data }) => {
   return (
     <Layout>
       <main className="flex flex-col  mb-20 w-10/12 m-auto">
-        <GatsbyImage className="mb-10 m-auto" image={data.datoCmsActualite.imageArticle.gatsbyImageData} alt={data.datoCmsActualite.imageArticle.alt} />
+        <GatsbyImage className="mb-10 m-auto max-w-full" image={data.datoCmsActualite.imageArticle.gatsbyImageData} 
+        alt={data.datoCmsActualite.imageArticle.alt}
+         />
     <article className="flex flex-col gap-y-10">
         <section>
     <h1 className="text-primary-color text-3xl">{data.datoCmsActualite.titreDeLArticle}</h1>

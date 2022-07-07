@@ -67,7 +67,7 @@ const Projets = () => {
  <section id="autresprojets" className="col-span-2 flex flex-col md:grid gap-x-20 grid-cols-2 gap-y-5">
    
   
-   <div className="flex flex-col gap-y-5">
+   <div className="flex flex-col gap-y-5 order-2 md:order-1">
    <h3 className="text-xl font-black text-primary-color ">{data.datoCmsPageFerreole.titresAutresProjets}</h3>
 
    <div className="paragraphe"
@@ -79,8 +79,9 @@ const Projets = () => {
 </div>
 <GatsbyImage image={data.datoCmsPageFerreole.imageAutresProjets.gatsbyImageData}
    alt={data.datoCmsPageFerreole.imageAutresProjets.alt}
+   className="order-1 md:order-2"
    />
-<div className="paragraphe col-span-2"
+<div className="paragraphe col-span-2 order-3"
        dangerouslySetInnerHTML={{
          __html: data.datoCmsPageFerreole.texteAutresProjetsDeux
        }}

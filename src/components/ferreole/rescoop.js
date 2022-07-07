@@ -19,7 +19,7 @@ const Rescoop = () => {
       }
       imageQuEstCeQuUneCoopRativeAgrE {
         alt
-        gatsbyImageData
+        gatsbyImageData 
       }
       imageRescoopLaFederationDesCoopsDenergie {
         alt
@@ -49,9 +49,9 @@ const Rescoop = () => {
   return       <article id="rescoop" className="w-10/12 m-auto  flex flex-col gap-y-20 py-20 ">
   <h2 className="text-2xl md:text-3xl text-secondary-color  font-black  text-center">REScoop Wallonie</h2>
   <section className="flex flex-col gap-20 ">
-<figure className="w-1/2 m-auto self-center">
+<figure className="md:w-1/2 m-auto self-center">
   <GatsbyImage image={data.datoCmsPageFerreole.imageQuEstCeQuUneCoopRativeAgrE.gatsbyImageData}
-  alt={data.datoCmsPageFerreole.imageQuEstCeQuUneCoopRativeAgrE.gatsbyImageData} className /></figure>
+  alt={data.datoCmsPageFerreole.imageQuEstCeQuUneCoopRativeAgrE.gatsbyImageData} className="min-w-full" /></figure>
   <div className="flex flex-col gap-y-10">
       <h3 className="text-xl font-black text-primary-color">{data.datoCmsPageFerreole.titreQuEstCeQuUneCooperativeAgree}</h3>
       <div className="paragraphe"
