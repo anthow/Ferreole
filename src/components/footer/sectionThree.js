@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const SectionThree = () => {
   return (
@@ -6,21 +7,42 @@ const SectionThree = () => {
       <h4 className="text-xl text-center">Menu</h4>
       <section className="flex flex-col gap-x-10 md:grid grid-cols-2">
         <ul>
-          <li> Ferréole</li>
-          <li>Projet de Ferrières</li>
-          <li>Vents d’Autelbas</li>
-          <li>Autres projets</li>
+          <Link to="/ferreole">
+            <li> Ferréole</li>
+          </Link>
+          <Link to="/projets/ferrieres">
+            <li>Projet de Ferrières</li>
+          </Link>
+          <Link to="/ferreole/#autelbas">
+            <li>Vents d’Autelbas</li>
+          </Link>
+          <Link to="/ferreole/#autresprojets">
+            <li>Autres projets</li>
+          </Link>
+          <Link to="/actu">
           <li>Actualité</li>
-          <li>Agenda</li>
+          </Link>
+          <li className="hidden">Agenda</li>
         </ul>
         <ul>
+        <Link to="/cociter">
           <li>COCITER</li>
+          </Link>
+          <Link to="/devenir-cooperateur">
+
           <li>Devenir Coopérateur</li>
+          </Link>
+          <Link to="/contact">
+
           <li>Contact</li>
+          </Link>
+          <Link to="/faq">
           <li>FAQ</li>
-          <li>Infos</li>
+          </Link>
+          <a href="https://www.rescoop-wallonie.be/wp-content/uploads/2020/07/eolien-rumeurs-et-realites.pdf"  rel="noreferrer" target="_blank" >
           <li>Brochure</li>
-          <li>Documents</li>
+          </a>
+          <li className="hidden">Documents</li>
         </ul>
       </section>
     </article>

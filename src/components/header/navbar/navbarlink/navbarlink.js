@@ -128,7 +128,7 @@ export default function NavBarLink() {
                 {" "}
                 Documents
               </li>
-              <a target="_blank" href="/brochure/eolien-rumeurs-et-realites.pdf">
+              <a href="https://www.rescoop-wallonie.be/wp-content/uploads/2020/07/eolien-rumeurs-et-realites.pdf"  rel="noreferrer" target="_blank" >
 
               <li className="text-primary-color hover:opacity-70">
                 {" "}

@@ -53,7 +53,6 @@ const Rescoop = () => {
   <GatsbyImage image={data.datoCmsPageFerreole.imageQuEstCeQuUneCoopRativeAgrE.gatsbyImageData}
   alt={data.datoCmsPageFerreole.imageQuEstCeQuUneCoopRativeAgrE.gatsbyImageData} className="min-w-full" /></figure>
   <div className="flex flex-col gap-y-10">
-      <h3 className="text-xl font-black text-primary-color">{data.datoCmsPageFerreole.titreQuEstCeQuUneCooperativeAgree}</h3>
       <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteQuEstCeQuUneCooprrativeAgree

@@ -12,6 +12,11 @@ p,a, .paragraphe ul li, .paragraphe h3, .paragraphe h3 {
     font-size:110%;
 }
 
+.paragraphe ul li p {
+    margin-bottom: 50px;
+}
+
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
