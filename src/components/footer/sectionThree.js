@@ -42,7 +42,7 @@ const SectionThree = () => {
           <a href="https://www.rescoop-wallonie.be/wp-content/uploads/2020/07/eolien-rumeurs-et-realites.pdf"  rel="noreferrer" target="_blank" >
           <li>Brochure</li>
           </a>
-          <li className="hidden">Documents</li>
+          <li className="hidden">Document</li>
         </ul>
       </section>
     </article>
