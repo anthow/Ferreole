@@ -26,7 +26,7 @@ const Greenpeace = () => {
           />
         </figure>
     
-         <div className="order-2 text-lg font-black"
+         <div className="order-2 text-lg paragraphe font-black"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsCociter.paragrapheUnGreenpeace    
           }} />
