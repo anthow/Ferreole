@@ -20,7 +20,7 @@ const Header = () => {
     <figure className="m-auto order-1  ">
       <GatsbyImage image={data.datoCmsCociter.imageHeader.gatsbyImageData} alt={data.datoCmsCociter.imageHeader.alt} />
     </figure>
-      <h2 className=" text-xl md:text-3xl order-2 text-white md:mt-10  font-black ">
+      <h2 className=" text-lg md:text-3xl order-2 text-white md:mt-10  font-black ">
         {data.datoCmsCociter.titreHeader}
       </h2>
   

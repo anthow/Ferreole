@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const Cociter = () => {
@@ -31,8 +31,9 @@ const Cociter = () => {
             __html: data.datoCmsPageDAccueil.texteCociter
           }}
         />
+        <Link to="../cociter" >
       <button className="bg-secondary-color text-white py-2 px-5 w-max  text-lg md:text-xl font-black rounded">
-      Découvrir Cociter</button>
+      Découvrir Cociter</button></Link>
     </div>
   </section>
 </article>
