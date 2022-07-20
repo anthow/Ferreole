@@ -11,7 +11,8 @@ const Footer = () => {
 <SectionTwo />
 <SectionThree />
 </article>
-<p className="w-10/12 text-center m-auto">@Ferréole</p>
+<p className="w-10/12 text-center text-xs m-auto">Ferréole</p>
+<p className="w-10/12 text-center text-xs m-auto">site réalisé par <a className="text-xs" href="https://liono.be/" target="_blankl">Liono</a></p>
     </footer>
 
   );
