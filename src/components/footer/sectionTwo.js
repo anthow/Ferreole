@@ -15,19 +15,24 @@ const SectionTwo = () => {
       <section className="">
         <ul className="flex gap-x-2 text-xl ">
           <li>
+            <a href='mailto:contact@ferreole.be'>
             {" "}
             <FontAwesomeIcon
               className="hover:text-secondary-color text-lg"
               icon={faEnvelope}
               size="1x"
             />
+            </a> 
           </li>
           <li>
+          <a href="https://www.facebook.com/ferreole.be/" target="_blank">
             <FontAwesomeIcon
               className="hover:text-secondary-color text-lg"
               icon={faFacebook}
               size="1x"
             />
+                        </a>
+
           </li>
         </ul>
       </section>
