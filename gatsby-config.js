@@ -2,7 +2,11 @@ module.exports = {
   siteMetadata: {
     title: ``,
     siteUrl: `https://www.ferreole.be/`,
-    url: "https://www.ferreole.be/",
+    titleTemplate: "fereole",
+    description: "site de Fereole",
+    url: "",
+    image: "",
+    twitterUsername: "",
   },
   plugins: [
     "gatsby-plugin-image",
