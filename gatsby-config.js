@@ -13,6 +13,8 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     `gatsby-plugin-minify`,
     "gatsby-plugin-sitemap",
+    `gatsby-plugin-netlify`,
+    'gatsby-plugin-robots-txt',
 
     {
       resolve: "gatsby-plugin-manifest",
