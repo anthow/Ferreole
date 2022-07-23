@@ -23,17 +23,17 @@ const Formulaire = () => {
         <div className="flex flex-col gap-y-2">
           {" "}
           <label className="text-primary-color"> Nom </label>
-          <input type="text" className="w-max border"></input>
+          <input type="text" name="Nom" required className="w-max border"></input>
         </div>
         <div className="flex flex-col gap-y-2">
           {" "}
           <label className="text-primary-color"> Adresse mail </label>
-          <input type="mail" className=" w-max border"></input>
+          <input type="mail" name="mail" required className=" w-max border"></input>
         </div>
         <div className="flex flex-col gap-y-2">
           {" "}
           <label className="text-primary-color"> Message </label>
-          <textarea className="w-full border" rows="10"></textarea>
+          <textarea className="w-full border" name="message" required rows="10"></textarea>
         </div>
         <div class="g-recaptcha" data-sitekey="6Lf22gchAAAAAKmJCEmeuqKiLBD3YLWgROHSTWs6"></div>
         <br/>
