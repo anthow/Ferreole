@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Ferréole`,
-    siteUrl: `https://www.ferreole.be/`,
-    titleTemplate: "fereole",
-    description: "site de Fereole",
-    url: "",
-    image: "",
-    twitterUsername: "",
+    title:`Ferréole`,
+    siteUrl:`https://www.ferreole.be/`,
+    titleTemplate:"fereole",
+    description:"site de Fereole",
+    url:"",
+    image:"",
+    twitterUsername:"",
   },
   plugins: [
     "gatsby-plugin-image",
