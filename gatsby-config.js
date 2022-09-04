@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: ``,
+    title: `Ferréole`,
     siteUrl: `https://www.ferreole.be/`,
     titleTemplate: "fereole",
     description: "site de Fereole",
