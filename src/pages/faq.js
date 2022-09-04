@@ -4,6 +4,7 @@ import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Layout from '../components/layout'
 import { graphql } from "gatsby";
+import { SEO } from "../components/seo"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -11,6 +12,7 @@ function classNames(...classes) {
 
  const  Example= ({data}) =>
  <Layout>
+
    <h1 className=" text-center m-auto text-3xl text-secondary-color  font-black mb-5 md:mb-10">
         {" "}
         FAQ{" "}
@@ -64,3 +66,6 @@ export const query = graphql`
 `
 
 export default Example
+export const Head = () => (
+  <SEO title="FAQ" />
+  )

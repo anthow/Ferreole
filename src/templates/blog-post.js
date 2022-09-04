@@ -2,10 +2,12 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
+import { SEO } from "../components/seo"
 
 const ContactPage = ({ data }) => {
   return (
     <Layout>
+
       <main className="flex flex-col  mb-20 w-10/12 m-auto">
         <GatsbyImage className="mb-10 m-auto max-w-full" image={data.datoCmsActualite.imageArticle.gatsbyImageData} 
         alt={data.datoCmsActualite.imageArticle.alt}
@@ -57,3 +59,7 @@ export const query = graphql`
 `;
 
 export default ContactPage;
+export const Head = () => (
+  <SEO title=" blog" />
+  )
+  

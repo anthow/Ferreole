@@ -5,6 +5,7 @@ import Timeline from "../../components/ferrieres/timeline";
 import Header from "../../components/ferrieres/header";
 import Caracteristique from "../../components/ferrieres/caracteristique";
 import Savoir from "../../components/ferrieres/ensavoirplus";
+import { SEO } from "../../components/seo"
 
 const FerrierePage = () => {
   return (
@@ -21,3 +22,7 @@ const FerrierePage = () => {
 };
 
 export default FerrierePage;
+export const Head = () => (
+  <SEO title=" Projet de Ferrières" />
+  )
+  

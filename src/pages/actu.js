@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
+import { SEO } from "../components/seo"
 
 const Actu = () => {
 
@@ -27,7 +28,6 @@ const Actu = () => {
     }
   `)
   return<Layout>
-
   <article className="  py-20 md:py-10 md:min-h-9/10 flex flex-col m-auto bg-white ">
   <h2 className="w-10/12 m-auto text-3xl text-secondary-color  font-black mb-5 md:mb-10"> Actualités </h2>
 <section className="w-10/12 m-auto items-top flex flex-col gap-y-10 gap-x-10 md:grid grid-cols-2">
@@ -64,5 +64,7 @@ lire la suite...     </Link>
 }
 
 export default Actu
-
+export const Head = () => (
+  <SEO title="Actualité Ferréole" />
+)
 

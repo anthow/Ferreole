@@ -2,10 +2,13 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
+import { SEO } from "../components/seo"
 
 const ChartePage = ({ data }) => {
   return (
     <Layout>
+        <SEO title="Charte Ferréole" />
+
       <GatsbyImage
         image={
           data.datoCmsPageCharteEnergieCitoyenne.imageHeader.gatsbyImageData
@@ -85,3 +88,6 @@ export const query = graphql`
 `;
 
 export default ChartePage;
+export const Head = () => (
+  <SEO title="Charte Ferréole" />
+  )
