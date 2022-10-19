@@ -6,7 +6,11 @@ import { Link } from "gatsby";
 const News = () => {
   const data = useStaticQuery(graphql`
     {
-      allDatoCmsActualite(limit: 4, sort: {fields: meta___firstPublishedAt, order: DESC}) {
+      allDatoCmsActualite(
+        limit: 4
+        sort: {fields: meta___firstPublishedAt, order: DESC}
+        filter: {newsletterSite: {eq: true}}
+      )      {
         edges {
           node {
             slug
