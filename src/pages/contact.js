@@ -3,10 +3,14 @@ import Layout from "../components/layout";
 import Header from "../components/contact/header";
 import Formulaire from "../components/contact/formulaire";
 import Presse from "../components/contact/presse";
-import { SEO } from "../components/seo"
+import  Seo from "../components/seo"
 
 const ContactPage = () => {
-  return (
+  return (<>
+  <Seo
+        title="Contact"
+        description="Nous contacter"
+      />
     <Layout>
 
       <main className="flex flex-col space-y-20 mb-20">
@@ -15,10 +19,8 @@ const ContactPage = () => {
         <Presse />
       </main>
     </Layout>
+    </>
   );
 };
 
 export default ContactPage;
-export const Head = () => (
-  <SEO title="Contact " />
-  )

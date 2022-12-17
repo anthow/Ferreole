@@ -1,9 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import { SEO } from "../components/seo"
+import  Seo  from "../components/seo"
 
 const Statuts = ({ data }) =>
+<>
+<Seo title=" Statuts Ferréole" 
+        description=" Le statuts de Ferréole"/>
 <Layout>
 
     <article className="w-10/12 m-auto flex flex-col gap-y-10">
@@ -15,6 +18,7 @@ const Statuts = ({ data }) =>
         />
         </article>
 </Layout>
+</>
 
 export const query = graphql`
   {
@@ -26,6 +30,3 @@ export const query = graphql`
 `
 
 export default Statuts
-export const Head = () => (
-<SEO title=" statuts" />
-  )

@@ -4,6 +4,7 @@ module.exports = {
     siteUrl:`https://www.ferreole.be/`,
     titleTemplate:"fereole",
     description:"site de Fereole",
+    author:"Liono",
     url:"",
     image:"",
     twitterUsername:"",
