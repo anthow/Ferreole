@@ -64,7 +64,7 @@ export const query = graphql`
       }
       imageArticle {
         alt
-        gatsbyImageData(height: 600, layout: FIXED)
+        gatsbyImageData(height: 400, layout: FIXED)
       }
     }
   }
