@@ -1,5 +1,4 @@
 import React from "react";
-import SectionOne from "./sectionOne";
 import SectionTwo from "./sectionTwo"
 import SectionThree from "./sectionThree";
 const Footer = () => {
@@ -7,8 +6,7 @@ const Footer = () => {
   return (<>
       <script async defer src="https://scripts.withcabin.com/hello.js"></script>
     <footer className="block w-12/12   bg-primary-color text-white ">
-<article className=" w-10/12 md:m-auto py-20 px-3 md:px-0 gap-y-10 flex items-top flex-col md:grid grid-cols-4">
-<SectionOne />
+<article className=" w-10/12 md:m-auto py-20 px-3 md:px-0 gap-y-10 flex items-top flex-col md:grid grid-cols-2">
 <SectionTwo />
 <SectionThree />
 </article>
