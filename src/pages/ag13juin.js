@@ -10,12 +10,12 @@ const Nouveauxstatuts = ({ data }) => {
 <article className="flex flex-col py-10 gap-20 w-10/12 m-auto">
     <section className="flex flex-col gap-10">
     <h1 className=" text-3xl text-secondary-color  font-black ">
-        {data.datoCmsag13juin.titreAg}
+        {data.datoCmsAg13Juin.titreAg}
 </h1>
 <div
               className="paragraphe"
               dangerouslySetInnerHTML={{
-                __html: data.datoCmsag13juin.texteStatutsComplet,
+                __html: data.datoCmsAg13Juin.texteStatutsComplet,
               }}>
               </div>
     </section>
@@ -28,7 +28,7 @@ const Nouveauxstatuts = ({ data }) => {
 
 export const query = graphql`
   {
-    datoCmsag13juin {
+    datoCmsAg13Juin {
       titreAg
       texteStatutsComplet
   
