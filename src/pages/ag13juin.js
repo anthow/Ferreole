@@ -33,6 +33,7 @@ export const query = graphql`
       texteStatutsComplet
   
   }
+}
 `;
 
 export default Nouveauxstatuts;
