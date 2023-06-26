@@ -38,9 +38,9 @@ const Statut = () => {
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteStatut
           }}
-        />    <Link to="/statuts">
+        />    <Link to="/nouveaux-statuts">
     <button className=" bg-white text-primary-color py-2 px-5 md:w-max text-xl font-black rounded">
-    Statuts complets  2012 + modifications 2019
+    Statuts complets  
     </button>
     </Link>
   </section>
