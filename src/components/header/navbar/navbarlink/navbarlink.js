@@ -79,10 +79,10 @@ const NavBarLink = () => {
           </svg>
         </button>
         <ul className="dropdown-menu text-primary-color md:absolute bg-white p-5 hidden space-y-4  text-gray-700 pt-">
-          <Link to="/projets/ferrieres">
+          <Link to="/projets/werbomont">
             <li className=" text-primary-color hover:opacity-70">
               {" "}
-              Projet de Ferrières
+              Projet de Werbomont
             </li>
           </Link>
           <li className="text-primary-color hover:opacity-70">

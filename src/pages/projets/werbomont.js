@@ -17,7 +17,6 @@ const FerrierePage = ({data}) => {
     <Layout>
       <main className="flex flex-col space-y-20 mb-20">
      <Header />
-       <Caracteristique />
         
           <Timeline />
         <Savoir />
