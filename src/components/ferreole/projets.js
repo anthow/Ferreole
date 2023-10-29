@@ -44,11 +44,7 @@ const Projets = () => {
             __html: data.datoCmsPageFerreole.texteDeProjetDeFerriere
           }}
         />
-      <Link to="../projets/ferrieres">
-      <button className=" hover:opacity-70 bg-secondary-color w-max p-2 rounded font-black text-white">
-        {" "}
-        En savoir plus{" "}
-      </button></Link>
+      
     </section>
     <section id="autelbas" className="flex flex-col gap-y-5">
    
