@@ -1,48 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 const Formulaire = () => {
-  const siteKey =
-    process.env.GATSBY_RECAPTCHA_SITE_KEY ||
-    "6LcuCrwsAAAAAI7Fvg4_4iIseXRHHSVyGBxobRiT";
-  const captchaRef = useRef(null);
-  const captchaRenderedRef = useRef(false);
-
-  useEffect(() => {
-    const renderRecaptcha = () => {
-      if (captchaRenderedRef.current || !captchaRef.current) return;
-      if (!window.grecaptcha || !window.grecaptcha.render) return;
-
-      window.grecaptcha.ready(() => {
-        if (captchaRenderedRef.current || !captchaRef.current) return;
-        window.grecaptcha.render(captchaRef.current, { sitekey: siteKey });
-        captchaRenderedRef.current = true;
-      });
-    };
-
-    if (window.grecaptcha && window.grecaptcha.render) {
-      renderRecaptcha();
-      return;
-    }
-
-    const existingScript = document.querySelector(
-      'script[src="https://www.google.com/recaptcha/api.js"]'
-    );
-
-    if (existingScript) {
-      existingScript.addEventListener("load", renderRecaptcha);
-      return () => existingScript.removeEventListener("load", renderRecaptcha);
-    }
-
-    const script = document.createElement("script");
-    script.src = "https://www.google.com/recaptcha/api.js?render=explicit";
-    script.async = true;
-    script.defer = true;
-    script.addEventListener("load", renderRecaptcha);
-    document.body.appendChild(script);
-
-    return () => script.removeEventListener("load", renderRecaptcha);
-  }, [siteKey]);
-
   return (
     <article
       id="contact"
@@ -55,9 +13,19 @@ const Formulaire = () => {
       
       <form
         className="flex flex-col gap-y-5"
-        action="https://formspree.io/f/mrgjnkez"
+        name="contactfereole"
         method="POST"
+        action="/contact?success=1"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
+        netlify-honeypot="bot-field"
       >
+        <input type="hidden" name="form-name" value="contactfereole" />
+        <p hidden>
+          <label>
+            Ne pas remplir ce champ: <input name="bot-field" />
+          </label>
+        </p>
         <div className="flex flex-col gap-y-2">
           {" "}
           <label className="text-primary-color"> Nom </label>
@@ -73,9 +41,9 @@ const Formulaire = () => {
           <label className="text-primary-color"> Message </label>
           <textarea className="w-full border" name="message" required rows="10"></textarea>
         </div>
-        <div ref={captchaRef}></div>
+        <div data-netlify-recaptcha="true"></div>
         <br/>
-        <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
+        <button type="submit" className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
           {" "}
           Envoyer{" "}
         </button>

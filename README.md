@@ -52,3 +52,13 @@
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
 [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+
+## Contact form with Netlify Forms
+
+The contact form now uses native Netlify Forms processing.
+
+Required Netlify environment variables:
+
+- No required variable for basic form handling
+- Optional: configure notifications in Netlify dashboard
+- reCAPTCHA is enabled through Netlify Forms (`data-netlify-recaptcha="true"`)
