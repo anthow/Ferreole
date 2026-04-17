@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Formulaire = () => {
   const siteKey =
     process.env.GATSBY_RECAPTCHA_SITE_KEY ||
     "6LcuCrwsAAAAAI7Fvg4_4iIseXRHHSVyGBxobRiT";
+
+  useEffect(() => {
+    const existingScript = document.querySelector(
+      'script[src="https://www.google.com/recaptcha/api.js"]'
+    );
+
+    if (existingScript) return;
+
+    const script = document.createElement("script");
+    script.src = "https://www.google.com/recaptcha/api.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+  }, []);
 
   return (
     <article

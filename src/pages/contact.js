@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
 import Header from "../components/contact/header";
 import Formulaire from "../components/contact/formulaire";
@@ -8,13 +7,6 @@ import  Seo from "../components/seo"
 
 const ContactPage = () => {
   return (<>
-  <Helmet>
-    <script
-      src="https://www.google.com/recaptcha/api.js"
-      async
-      defer
-    />
-  </Helmet>
   <Seo
         title="Contact"
         description="Nous contacter"
