@@ -25,7 +25,7 @@ const SectionTwo = () => {
             </a> 
           </li>
           <li>
-          <a href="https://www.facebook.com/ferreole.be/" target="_blank">
+          <a href="https://www.facebook.com/ferreole.be/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon
               className="hover:text-secondary-color text-lg"
               icon={faFacebook}

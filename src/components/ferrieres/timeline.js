@@ -22,21 +22,21 @@ const Timeline = () => {
         {data.datoCmsProjetDeFerriere.titreSectionAvance}{" "}
       </h2>
       <p className="text-center text-primary-color">Timing provisoire</p>
-      <div class="container  mx-auto w-full h-full">
-        <div class="relative wrap overflow-hidden p-10 h-full">
+      <div className="container  mx-auto w-full h-full">
+        <div className="relative wrap overflow-hidden p-10 h-full">
           <div
-            class="border-2-2 absolute timeline border-opacity-20 border-red-700 h-full border"
-            styles={"left: 50%"}
+            className="border-2-2 absolute timeline border-opacity-20 border-red-700 h-full border"
+            style={{ left: "50%" }}
           ></div>
           {/* right timeline */}
-          <div class="mb-8 flex justify-between items-center w-full right-timeline">
-            <div class="order-1 w-5/12"></div>
-            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-              <span class="mx-auto font-semibold text-lg text-white">
+          <div className="mb-8 flex justify-between items-center w-full right-timeline">
+            <div className="order-1 w-5/12"></div>
+            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+              <span className="mx-auto font-semibold text-lg text-white">
                 1
               </span>
             </div>
-            <div class="order-1  rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <div className="order-1  rounded-lg shadow-xl w-5/12 px-6 py-4">
               
               <div className="text-sm leading-snug tracking-wide text-primary-color text-opacity-100"
           dangerouslySetInnerHTML={{
@@ -47,14 +47,14 @@ const Timeline = () => {
           </div>
 
           {/* left timeline */}
-          <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-            <div class="order-1 w-5/12"></div>
-            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-              <span class="mx-auto font-semibold text-lg text-white">
+          <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div className="order-1 w-5/12"></div>
+            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+              <span className="mx-auto font-semibold text-lg text-white">
                 2
               </span>
             </div>
-            <div class="order-1 color shadow-xl  w-5/12 px-6 py-4">
+            <div className="order-1 color shadow-xl  w-5/12 px-6 py-4">
             <div className="text-sm leading-snug tracking-wide text-primary-color text-opacity-100"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.ligneDuTempsEtapeDeux
@@ -64,14 +64,14 @@ const Timeline = () => {
           </div>
 
           {/* right timeline */}
-          <div class="mb-8 flex justify-between items-center w-full right-timeline">
-            <div class="order-1 w-5/12"></div>
-            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-            <span class="mx-auto font-semibold text-lg text-white">
+          <div className="mb-8 flex justify-between items-center w-full right-timeline">
+            <div className="order-1 w-5/12"></div>
+            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+            <span className="mx-auto font-semibold text-lg text-white">
                 3
               </span>
             </div>
-            <div class="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <div className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4">
             <div className="text-sm leading-snug tracking-wide text-primary-color text-opacity-100"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.ligneDuTempsEtapeTrois
@@ -81,14 +81,14 @@ const Timeline = () => {
           </div>
 
           {/*left timeline */}
-          <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-            <div class="order-1 w-5/12"></div>
-            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-              <span class="mx-auto font-semibold text-lg text-white">
+          <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div className="order-1 w-5/12"></div>
+            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+              <span className="mx-auto font-semibold text-lg text-white">
                 4
               </span>
             </div>
-            <div class="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <div className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4">
             <div className="text-sm leading-snug tracking-wide text-primary-color text-opacity-100"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.ligneDuTempsEtapeQuatre
@@ -97,14 +97,14 @@ const Timeline = () => {
             </div>
           </div>
           {/* right timeline */}
-          <div class="mb-8 flex justify-between items-center w-full right-timeline">
-            <div class="order-1 w-5/12"></div>
-            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-            <span class="mx-auto font-semibold text-lg text-white">
+          <div className="mb-8 flex justify-between items-center w-full right-timeline">
+            <div className="order-1 w-5/12"></div>
+            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+            <span className="mx-auto font-semibold text-lg text-white">
                             5
               </span>
             </div>
-            <div class="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <div className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4">
             <div className="text-sm leading-snug tracking-wide text-primary-color text-opacity-100"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.ligneDuTempsEtapeCinq    
@@ -114,14 +114,14 @@ const Timeline = () => {
           </div>
 
           {/*left timeline */}
-          <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-            <div class="order-1 w-5/12"></div>
-            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-              <span class="mx-auto font-semibold text-lg text-white">
+          <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div className="order-1 w-5/12"></div>
+            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+              <span className="mx-auto font-semibold text-lg text-white">
                 6
               </span>
             </div>
-            <div class="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <div className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4">
             <div className="text-sm leading-snug tracking-wide text-primary-color text-opacity-100"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsProjetDeFerriere.ligneDuTempsEtapeSix    

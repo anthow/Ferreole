@@ -1,11 +1,12 @@
-import { GatsbyImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
+import Seo from "../components/seo";
 
 const Nouveauxstatuts = ({ data }) => {
   return (
     <>
+      <Seo title="Nouveaux statuts" description="Présentation des nouveaux statuts de Ferréole." pathname="/nouveaux-statuts/" />
       <Layout>
 <article className="flex flex-col py-10 gap-20 w-10/12 m-auto">
     <section className="flex flex-col gap-10">

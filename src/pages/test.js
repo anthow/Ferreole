@@ -4,13 +4,16 @@ import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Layout from '../components/layout'
 import { graphql } from "gatsby";
+import Seo from "../components/seo";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
  const  Example= ({data}) =>
- <Layout>
+<>
+<Seo title="FAQ" description="Questions fréquentes sur Ferréole." pathname="/test/" />
+<Layout>
    <h1 className=" text-center m-auto text-3xl text-secondary-color  font-black mb-5 md:mb-10">
         {" "}
         FAQ{" "}
@@ -55,6 +58,7 @@ return <Menu as="div" className="  flex flex-col gap-y-5 border mb-10">
     })}
 </article>
     </Layout>
+    </>
 export const query = graphql`
 {
   allDatoCmsFaq(sort: { order: ASC, fields: id }) {

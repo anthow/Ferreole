@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const Rescoop = () => {
@@ -51,14 +51,14 @@ const Rescoop = () => {
   <section className="flex flex-col gap-20 ">
 <figure className="md:w-1/2 m-auto self-center">
   <GatsbyImage image={data.datoCmsPageFerreole.imageQuEstCeQuUneCoopRativeAgrE.gatsbyImageData}
-  alt={data.datoCmsPageFerreole.imageQuEstCeQuUneCoopRativeAgrE.gatsbyImageData} className="min-w-full" /></figure>
+  alt={data.datoCmsPageFerreole.imageQuEstCeQuUneCoopRativeAgrE.alt || ""} className="min-w-full" /></figure>
   <div className="flex flex-col gap-y-10">
       <div className="paragraphe"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsPageFerreole.texteQuEstCeQuUneCooprrativeAgree
           }}
         /> 
-        <a href="http://www.rescoop-wallonie.be" target="_blank">
+        <a href="http://www.rescoop-wallonie.be" target="_blank" rel="noreferrer">
       <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
     En savoir plus{" "}
   </button>
@@ -71,7 +71,7 @@ const Rescoop = () => {
 
   <GatsbyImage      className="mb-10 w-1/2"
  image={data.datoCmsPageFerreole.imageLaCharteEnergieCitoyenne.gatsbyImageData}
-  alt={data.datoCmsPageFerreole.imageLaCharteEnergieCitoyenne.gatsbyImageData} />
+  alt={data.datoCmsPageFerreole.imageLaCharteEnergieCitoyenne.alt || ""} />
   <div className="flex flex-col gap-y-10 ">
       <section className="flex-flex-col gap-y-10">
           <h2 className="text-xl text-primary-color mb-10"> {data.datoCmsPageCharteEnergieCitoyenne.titrePrincipes}</h2>

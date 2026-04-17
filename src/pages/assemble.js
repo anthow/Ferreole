@@ -1,11 +1,12 @@
-import { GatsbyImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
+import Seo from "../components/seo";
 
 const ChartePage = ({ data }) => {
   return (
     <>
+      <Seo title="Assemblée générale" description="Informations de l'assemblée générale Ferréole." pathname="/assemble/" />
       <Layout>
 <article className="flex flex-col py-10 gap-20 w-10/12 m-auto">
     <section className="flex flex-col gap-10">

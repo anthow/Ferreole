@@ -1,10 +1,10 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
-
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 const Formulaire = () => {
+  const siteKey =
+    process.env.GATSBY_RECAPTCHA_SITE_KEY ||
+    "6LcuCrwsAAAAAI7Fvg4_4iIseXRHHSVyGBxobRiT";
+
   return (
     <article
       id="contact"
@@ -28,14 +28,14 @@ const Formulaire = () => {
         <div className="flex flex-col gap-y-2">
           {" "}
           <label className="text-primary-color"> Adresse mail </label>
-          <input type="mail" name="mail" required className=" w-max border"></input>
+          <input type="email" name="mail" required className=" w-max border"></input>
         </div>
         <div className="flex flex-col gap-y-2">
           {" "}
           <label className="text-primary-color"> Message </label>
           <textarea className="w-full border" name="message" required rows="10"></textarea>
         </div>
-        <div class="g-recaptcha" data-sitekey="6Lf22gchAAAAAKmJCEmeuqKiLBD3YLWgROHSTWs6"></div>
+        <div className="g-recaptcha" data-sitekey={siteKey}></div>
         <br/>
         <button className=" bg-secondary-color text-white py-2 px-5 w-max text-xl font-black rounded">
           {" "}
